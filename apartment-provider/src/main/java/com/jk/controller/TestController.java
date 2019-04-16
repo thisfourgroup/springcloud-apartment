@@ -17,6 +17,6 @@ public class TestController {
     @ResponseBody
     public String testF(){
 
-        return "success";
+        return "true";
     }
 }
