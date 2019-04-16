@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ebb932-3c76-4dd8-9e6c-4d0313f55274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/target/classes/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apartment-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apartment-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-apartment.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="570">
               <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -44,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="300">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -89,22 +82,17 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/Program Files/Java/apache-maven-3.6.0" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.5.4" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="12" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="28" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="27" />
+    <option name="width" value="1347" />
+    <option name="height" value="689" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,94 +103,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apartment" type="462c0819:PsiDirectoryNode" />
-              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,7 +121,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -273,6 +175,7 @@
       <updated>1555385342081</updated>
       <workItem from="1555385343539" duration="2793000" />
       <workItem from="1555395022041" duration="1387000" />
+      <workItem from="1555405445431" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1555387084352</created>
@@ -285,14 +188,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4180000" />
+    <option name="totallyTimeSpent" value="4200000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="JRebel" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25226668" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25536194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -300,11 +201,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
-      <window_info anchor="bottom" id="Run with VisualVM" />
-      <window_info anchor="bottom" id="JRebel Executor" />
-      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
-      <window_info anchor="bottom" id="Debug with VisualVM" />
+      <window_info id="JRebel" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45628998" />
@@ -320,7 +217,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Mybatis datasource" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="15" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="16" />
+      <window_info anchor="bottom" id="JRebel Executor" order="17" />
+      <window_info anchor="bottom" id="JRebel Console" order="18" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="19" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,6 +232,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Mybatis datasource" order="10" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +280,6 @@
           <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -424,7 +325,6 @@
           <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/apartment-eureka/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -469,7 +369,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="570">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -479,8 +379,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="300">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
