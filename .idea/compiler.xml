@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="provider-zyk" />
         <module name="common" />
         <module name="apartment-provider" />
         <module name="apartment-eureka" />
@@ -18,6 +19,7 @@
       <module name="apartment-eureka" options="-parameters" />
       <module name="apartment-feign" options="-parameters" />
       <module name="apartment-provider" options="-parameters" />
+      <module name="provider-zyk" options="-parameters" />
     </option>
   </component>
 </project>
