@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/apartment-provider/pom.xml" />
         <option value="$PROJECT_DIR$/apartment-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/provider-zyk/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-zyk/pom.xml" />
       </list>
     </option>
   </component>

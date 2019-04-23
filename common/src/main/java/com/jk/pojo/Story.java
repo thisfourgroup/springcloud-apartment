@@ -28,6 +28,8 @@ public class Story {
 
     private Integer typeId;
 
+    private String typeName;
+
     private String pingjiaInfo;
 
     private Integer zan;

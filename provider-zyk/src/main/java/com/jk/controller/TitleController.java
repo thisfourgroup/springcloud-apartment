@@ -5,6 +5,7 @@ import com.jk.service.TitleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -28,7 +29,7 @@ public class TitleController {
      * @return
      */
     @RequestMapping("queryTitles")
-    public JSONObject queryTitles(Integer page,Integer rows){
+    public JSONObject queryTitles(@RequestParam(value = "page") Integer page, @RequestParam(value = "rows") Integer rows){
 
         return titleService.queryTitles(page,rows);
 

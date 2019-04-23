@@ -6,7 +6,9 @@ import com.jk.pojo.Type;
 import com.jk.service.StoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -31,7 +33,7 @@ public class StoryController {
      * @return
      */
     @RequestMapping("queryStorys")
-    public JSONObject queryStorys(Story story){
+    public JSONObject queryStorys(@RequestBody Story story){
         return storyService.queryStorys(story);
     }
 
@@ -41,7 +43,7 @@ public class StoryController {
      * @return
      */
     @RequestMapping("saveOrUpdateStory")
-    public Boolean saveOrUpdateStory(Story story){
+    public Boolean saveOrUpdateStory(@RequestBody Story story){
         return storyService.saveOrUpdateStory(story);
     }
 
@@ -51,7 +53,7 @@ public class StoryController {
      * @return
      */
     @RequestMapping("queryStoryById")
-    public Story queryStoryById(Integer storyId){
+    public Story queryStoryById(@RequestParam(value = "storyId") Integer storyId){
         return storyService.queryStoryById(storyId);
     }
 
@@ -61,7 +63,7 @@ public class StoryController {
      * @return
      */
     @RequestMapping("deleteStorysById")
-    public Boolean deleteStorysById(String ids){
+    public Boolean deleteStorysById(@RequestParam(value = "ids") String ids){
         return storyService.deleteStorysById(ids);
     }
 

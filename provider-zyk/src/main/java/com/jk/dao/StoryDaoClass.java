@@ -18,7 +18,7 @@ public class StoryDaoClass {
      * @return
      */
     public String queryStoryCount(Story story){
-        String sql = "select count(*) from t_story s where 1 = 1 ";
+        String sql = "select count(*) from t_story s left join t_type t on s.typeId = t.id where 1 = 1 ";
         if(StringUtils.isNotEmpty(story.getJieshao())){
             sql += " and s.jieshao like '%"+story.getJieshao()+"%' ";
         }
@@ -29,7 +29,7 @@ public class StoryDaoClass {
     }
 
   public String queryStorys(Story story){
-        String sql = "select * from t_story s where 1 = 1 ";
+        String sql = "select s.*,t.name as typeName from t_story s left join t_type t on s.typeId = t.id where 1 = 1 ";
         if(StringUtils.isNotEmpty(story.getJieshao())){
             sql += " and s.jieshao like '%"+story.getJieshao()+"%' ";
         }
