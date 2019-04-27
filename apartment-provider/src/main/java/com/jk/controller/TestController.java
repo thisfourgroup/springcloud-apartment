@@ -15,8 +15,7 @@ public class TestController {
 
     @RequestMapping("test")
     @ResponseBody
-    public String testF(){
+    public void testF(){
 
-        return "true";
     }
 }
