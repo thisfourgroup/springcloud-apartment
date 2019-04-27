@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入jquery -->
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <!-- 引入bootstrap的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.css">
+    <script type="text/javascript" src="/js/bootstrap3/js/bootstrap.js"></script>
+    <!-- 引入tree的js、css -->
+    <link rel="stylesheet" href="/js/bootstrap-treeview/bootstrap-treeview.min.css">
+    <script type="text/javascript" src="/js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <!-- 引入选项卡的js、css -->
+    <link rel="stylesheet" href="/js/bootStrap-addTabs/bootstrap.addtabs.css">
+    <script type="text/javascript" src="/js/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+    <!-- 引入table的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-table/bootstrap-table.css">
+    <script type="text/javascript" src="/js/bootstrap-table/bootstrap-table.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <!-- 引入删除提示框 -->
+    <script type="text/javascript" src="/js/bootbox/bootbox.min.js"></script>
+    <!-- 引入时间的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script  src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script  src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+   <div id="toolbar" class="panel panel-default">
+        <button type="button" onclick="addTitle()" class="btn btn-info">新增</button>
+   </div>
+   <div id="titleTable"></div>
+</body>
+<script>
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });
+
+ $(function(){
+  initTitleTable();
+ })
+ function searchTitle(){
+     $("#titleTable").bootstrapTable('refresh');
+ }
+
+ function initTitleTable(){
+     $("#titleTable").bootstrapTable({
+         url: '/findTitlePage',
+
+         columns: [
+             {checkbox: true},
+             {field: 'id', title: 'id'},
+             {field: 'name', title: '大表题'},
+             {field: '111', title: '操作', formatter: function (value, row, index) {
+                     return '<a href="javascript:delOne(' + row.id + ');">删除</a> | <a href="javascript:editBook(' + row.id + ');">修改</a>'
+                 }
+             }
+         ]
+     });
+ }
+
+
+
+ //单删
+ function delOne(id){
+     delBook(id)
+ }
+ //删除提出公共代码
+ function delBook(id){
+     bootbox.confirm({
+         size:"small",
+         message:"你确定要删除吗？",
+         callback:function(result){
+             if(result){
+                 $.ajax({
+                     url:'/deleteTitle',
+                     type:'post',
+                     data:{id:id},
+                     dataType:'json',
+                     success:function(data){
+                         if(data){
+                             searchTitle();
+                         }else{
+                             bootbox.alert({
+                                 size:"amall",
+                                 title:"提示",
+                                 massage:'删除失败',
+                             })
+                         }
+                     }
+                 })
+             }
+         }
+     })
+ }
+
+
+ //新增
+ var res;
+ function createAddContent(url){
+     $.ajax({
+         url:url,
+         async:false,
+         success:function(data){
+             res = data;
+         }
+     });
+     return res;
+ }
+
+
+ function addTitle(){
+     var url='toAddTitle';
+     var dialog=bootbox.dialog({
+         title:'新增大标题',
+         message:createAddContent(url),
+         size:'large',
+         buttons:{
+             cancle:{
+                 label:"关闭",
+                 className:'btn-danger',
+                 callback:function(){
+                     console.log('Custom cancle clicked');
+                 }
+             },
+             ok:{
+                 label:"保存",
+                 className:'btn-info',
+                 callback:function(){
+
+                     $.ajax({
+                         url:'/saveTitle',
+                         type:'post',
+                         data:$("#titleForm").serialize(),
+                         dataType:'json',
+                         success:function(data){
+                             alert("新增成功");
+                             if (data) {
+                                 searchTitle();//刷新
+                             }else{
+                                 bootbox.alert({
+                                     size:'small',
+                                     title:'提示',
+                                     message:'新增失败',
+                                 })
+                             }
+                         }
+                     })
+                 }
+             }
+         }
+     })
+ }
+
+
+    //修改    先打开弹框
+    function editBook(id){
+        //打开修改弹框
+        openEditDialog();
+        //初始化表单数据
+        //initTypeSelect();
+        //查询回显数据
+        $.ajax({
+            url:'/findNewsInfoById',
+            type:'post',
+            data:{id:id},
+            dataType:'json',
+            success:function(data){
+                $("#newsId").val(data.id);
+                $("#newsName").val(data.name);
+
+            }
+
+        })
+    }
+
+    function openEditDialog(){
+        var url='toEditTitle';
+        bootbox.dialog({
+            title:'修改大标题',
+            message:createAddContent(url),
+            size:'large',
+            buttons:{
+                cancle:{
+                    label:"关闭",
+                    className:'btn-danger',
+                    callback:function(){
+                        console.log('Custom cancle clicked');
+                    }
+                },
+                ok:{
+                    label:"保存",
+                    className:'btn-info',
+                    callback:function(){
+                        $.ajax({
+                            url:'/saveTitle',
+                            type:'post',
+                            data:$("#titleForm").serialize(),
+                            dataType:'json',
+                            success:function(data){
+                                if (data) {
+                                    searchTitle();//刷新
+                                }else{
+                                    bootbox.alert({
+                                        size:'small',
+                                        title:'提示',
+                                        message:'修改失败',
+                                    })
+                                }
+                            }
+                        })
+                    }
+                }
+            }
+        })
+    }
+
+
+</script>
+</html>

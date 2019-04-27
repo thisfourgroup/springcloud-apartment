@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!-- saved from url=(0169)https://pwa.tujia.com/modules/?id=T20190411144657&code=tjwydczhcpcsyjd&srcLocalSite=goSite&tujia_code=tjwydczhcpcsyjd&refurl=https%3A%2F%2Fwww.tujia.com%2F&istjsite=true -->
+<html lang="en" style="font-size: 16px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1, user-scalable=no,minimal-ui">
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <link rel="icon" href="https://pwastatic.tujia.com/modules/favicon.ico">
+    <title>途家民宿五一大促</title>
+    <script src="/途家民宿五一大促_files/push.js.下载"></script>
+    <script>if (window.location.href.indexOf('nostorage=true') > -1) {
+        window.nostorage = true
+    }
+    </script>
+    <script>document.write(decodeURIComponent(navigator.userAgent.indexOf('AlipayClient') > -1 ? "%3Cscript src='https://appx/web-view.min.js' type='text/javascript'%3E%3C/script%3E" : "%3Cscript src='https://pwastatic.tujia.com/modules/static/lib/wx_app_sdk1_3_2.js' type='text/javascript'%3E%3C/script%3E"))
+    </script>
+    <script src="/途家民宿五一大促_files/wx_app_sdk1_3_2.js.下载" type="text/javascript"></script>
+    <link href="https://pwastatic.tujia.com/modules/static/css/chunk-f66eeef2.c2bfe29f.css" rel="prefetch">
+    <link href="/途家民宿五一大促_files/chunk-fcbd4a12.a2d35594.css" rel="prefetch">
+    <link href="https://pwastatic.tujia.com/modules/static/js/chunk-2d0bd166.5de6709c.js" rel="prefetch">
+    <link href="https://pwastatic.tujia.com/modules/static/js/chunk-2d0c4265.f0b5fbf3.js" rel="prefetch">
+    <link href="https://pwastatic.tujia.com/modules/static/js/chunk-f66eeef2.60563b42.js" rel="prefetch">
+    <link href="/途家民宿五一大促_files/chunk-fcbd4a12.215712d3.js.下载" rel="prefetch">
+    <link href="/途家民宿五一大促_files/app.1124b3ed.css" rel="preload" as="style">
+    <link href="/途家民宿五一大促_files/chunk-vendors.eab05fba.css" rel="preload" as="style">
+    <link href="/途家民宿五一大促_files/app.23b78843.js.下载" rel="preload" as="script">
+    <link href="/途家民宿五一大促_files/chunk-vendors.4075cd8b.js.下载" rel="preload" as="script">
+    <link href="/途家民宿五一大促_files/chunk-vendors.eab05fba.css" rel="stylesheet">
+    <link href="/途家民宿五一大促_files/app.1124b3ed.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/途家民宿五一大促_files/chunk-fcbd4a12.a2d35594.css">
+    <script charset="utf-8" src="/途家民宿五一大促_files/chunk-fcbd4a12.215712d3.js.下载"></script>
+</head>
+<script>
+
+    /*第二模块*/
+    $(function(){
+       dier(3);
+    })
+    function dier(cityid){
+        $.ajax({
+            url:"/findHouse2",
+            type:'post',
+            //dataType:'json',
+            data:{
+                cityid:cityid
+            },
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    //alert("data[i].image")
+                    html+= '<div data-v-21840e8a="" data-actionid="3" data-itemtext='+data[i].name+' data-itemotherinfo="396542" class="house-warp">'
+                    html+= '<div data-v-21840e8a="" class="house-imgs-warp swiper-container swiper-container-horizontal">'
+                    html+= '  <img data-v-21840e8a="" src="https://pic.tujia.com/upload/feccms/day_190415/201904150028518768.png" class="atmosphere-icon">'//5.1大促销图标
+                    html+= '<div data-v-21840e8a="" class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">'
+                    html+= '<div data-v-21840e8a="" class="swiper-slide swiper-slide-active" style="width: 377px;">'
+                    html+= '<img data-v-21840e8a="" width="100%" src='+data[i].image+'></div>'
+                    html+= '  <div data-v-21840e8a="" class="swiper-slide swiper-slide-next" style="width: 377px;">'
+                    html+= '  <img data-v-21840e8a="" width="100%" src="https://pic.tujia.com/upload/qualifiedpics/day_180417/thumb/201804170026471113_300_200.jpg"></div>'
+                    /*html+= '<div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'*/
+                    html+= ' </div>  '
+                    html+= ' <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-warp"><!---->'
+                    html+= '<div data-v-21840e8a="" class="house-detail-name single-unit">'+data[i].name+'</div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-unit"><label data-v-21840e8a="">'+data[i].huxingName+'</label><label data-v-21840e8a="">'+data[i].cityName+'</label></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-price">'
+                    html+= ' <div data-v-21840e8a="" class="detail-price-now">¥'+data[i].price+'</div><!---->'
+                    html+= '<div data-v-21840e8a="" class="detail-price-reason"><label data-v-21840e8a="">房源紧张</label><!----></div>'
+                    html+= '</div><!----></div>'
+                   // html+= '<div data-v-21840e8a="" class="favorate-icon" style="background-image: url(&quot;https://pwastatic.tujia.com/modules//static/imgs/unfavorate.png&quot;);"></div>'//点赞图标
+                    html+= '</div>'
+                }
+
+                $("#eee").html(html);
+            }
+
+        })
+
+    }
+
+
+
+
+/*第一模块
+* */
+    $(function(){
+        diyi(1);
+    })
+    function diyi(cityid){
+        $.ajax({
+            url:"/findHouse2",
+            type:'post',
+            //dataType:'json',
+            data:{
+
+                cityid:cityid
+            },
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    //alert("data[i].image")
+                    html+= '<div data-v-21840e8a="" data-actionid="3" data-itemtext='+data[i].name+' data-itemotherinfo="396542" class="house-warp">'
+                    html+= '<div data-v-21840e8a="" class="house-imgs-warp swiper-container swiper-container-horizontal">'
+                    html+= '  <img data-v-21840e8a="" src="https://pic.tujia.com/upload/feccms/day_190415/201904150028518768.png" class="atmosphere-icon">'//5.1大促销图标
+                    html+= '<div data-v-21840e8a="" class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">'
+                    html+= '<div data-v-21840e8a="" class="swiper-slide swiper-slide-active" style="width: 377px;">'
+                    html+= '<a href="javascript:tiao()"><img data-v-21840e8a="" width="100%" src='+data[i].image+'></a></div>'
+                    html+= '  <div data-v-21840e8a="" class="swiper-slide swiper-slide-next" style="width: 377px;">'
+                    html+= '  <img data-v-21840e8a="" width="100%" src="https://pic.tujia.com/upload/qualifiedpics/day_180417/thumb/201804170026471113_300_200.jpg"></div>'
+                    /*html+= '<div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'*/
+                    html+= ' </div>  '
+                    html+= ' <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-warp"><!---->'
+                    html+= '<div data-v-21840e8a="" class="house-detail-name single-unit">'+data[i].name+'</div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-unit"><label data-v-21840e8a="">'+data[i].huxingName+'</label><label data-v-21840e8a="">'+data[i].cityName+'</label></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-price">'
+                    html+= ' <div data-v-21840e8a="" class="detail-price-now">¥'+data[i].price+'</div><!---->'
+                    html+= '<div data-v-21840e8a="" class="detail-price-reason"><label data-v-21840e8a="">房源紧张</label><!----></div>'
+                    html+= '</div><!----></div>'
+                   // html+= '<div data-v-21840e8a="" class="favorate-icon" style="background-image: url(&quot;https://pwastatic.tujia.com/modules//static/imgs/unfavorate.png&quot;);"></div>'//点赞图标
+                    html+= '</div>'
+                }
+
+
+                $("#aaa").html(html);
+            }
+
+        })
+
+    }
+function tiao(){
+    window.location.href='http://192.168.1.154/GoToHouseHtml'
+}
+
+/*第三模块*/
+
+    $(function(){
+        disan(248);
+    })
+    function disan(cityid){
+        $.ajax({
+            url:"/findHouse2",
+            type:'post',
+            //dataType:'json',
+            data:{
+                cityid:cityid
+            },
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    //alert("data[i].image")
+                    html+= '<div data-v-21840e8a="" data-actionid="3" data-itemtext='+data[i].name+' data-itemotherinfo="396542" class="house-warp">'
+                    html+= '<div data-v-21840e8a="" class="house-imgs-warp swiper-container swiper-container-horizontal">'
+                    html+= '  <img data-v-21840e8a="" src="https://pic.tujia.com/upload/feccms/day_190415/201904150028518768.png" class="atmosphere-icon">'//5.1大促销图标
+                    html+= '<div data-v-21840e8a="" class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">'
+                    html+= '<div data-v-21840e8a="" class="swiper-slide swiper-slide-active" style="width: 377px;">'
+                    html+= '<img data-v-21840e8a="" width="100%" src='+data[i].image+'></div>'
+                    html+= '  <div data-v-21840e8a="" class="swiper-slide swiper-slide-next" style="width: 377px;">'
+                    html+= '  <img data-v-21840e8a="" width="100%" src="https://pic.tujia.com/upload/qualifiedpics/day_180417/thumb/201804170026471113_300_200.jpg"></div>'
+                    /*html+= '<div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'*/
+                    html+= ' </div>  '
+                    html+= ' <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-warp"><!---->'
+                    html+= '<div data-v-21840e8a="" class="house-detail-name single-unit">'+data[i].name+'</div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-unit"><label data-v-21840e8a="">'+data[i].huxingName+'</label><label data-v-21840e8a="">'+data[i].cityName+'</label></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-price">'
+                    html+= ' <div data-v-21840e8a="" class="detail-price-now">¥'+data[i].price+'</div><!---->'
+                    html+= '<div data-v-21840e8a="" class="detail-price-reason"><label data-v-21840e8a="">房源紧张</label><!----></div>'
+                    html+= '</div><!----></div>'
+                   // html+= '<div data-v-21840e8a="" class="favorate-icon" style="background-image: url(&quot;https://pwastatic.tujia.com/modules//static/imgs/unfavorate.png&quot;);"></div>'//点赞图标
+                    html+= '</div>'
+                }
+
+
+                $("#ccc").html(html);
+            }
+
+        })
+
+    }
+
+/*第四模块*/
+    $(function(){
+        disi(214);
+    })
+    function disi(cityid){
+        $.ajax({
+            url:"/findHouse2",
+            type:'post',
+            //dataType:'json',
+            data:{
+
+
+                cityid:cityid
+            },
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    //alert("data[i].image")
+                    html+= '<div data-v-21840e8a="" data-actionid="3" data-itemtext='+data[i].name+' data-itemotherinfo="396542" class="house-warp">'
+                    html+= '<div data-v-21840e8a="" class="house-imgs-warp swiper-container swiper-container-horizontal">'
+                    html+= '  <img data-v-21840e8a="" src="https://pic.tujia.com/upload/feccms/day_190415/201904150028518768.png" class="atmosphere-icon">'//5.1大促销图标
+                    html+= '<div data-v-21840e8a="" class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">'
+                    html+= '<div data-v-21840e8a="" class="swiper-slide swiper-slide-active" style="width: 377px;">'
+                    html+= '<img data-v-21840e8a="" width="100%" src='+data[i].image+'></div>'
+                    html+= '  <div data-v-21840e8a="" class="swiper-slide swiper-slide-next" style="width: 377px;">'
+                    html+= '  <img data-v-21840e8a="" width="100%" src="https://pic.tujia.com/upload/qualifiedpics/day_180417/thumb/201804170026471113_300_200.jpg"></div>'
+                    /*html+= '<div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'
+                    html+= ' <div data-v-21840e8a="" class="swiper-slide" style="width: 377px;"><img data-v-21840e8a="" width="100%" src="/途家民宿五一大促_files/201803282148229043_700_467.jpg"></div>'*/
+                    html+= ' </div>  '
+                    html+= ' <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-warp"><!---->'
+                    html+= '<div data-v-21840e8a="" class="house-detail-name single-unit">'+data[i].name+'</div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-unit"><label data-v-21840e8a="">'+data[i].huxingName+'</label><label data-v-21840e8a="">'+data[i].cityName+'</label></div>'
+                    html+= ' <div data-v-21840e8a="" class="house-detail-price">'
+                    html+= ' <div data-v-21840e8a="" class="detail-price-now">¥'+data[i].price+'</div><!---->'
+                    html+= '<div data-v-21840e8a="" class="detail-price-reason"><label data-v-21840e8a="">房源紧张</label><!----></div>'
+                    html+= '</div><!----></div>'
+                   // html+= '<div data-v-21840e8a="" class="favorate-icon" style="background-image: url(&quot;https://pwastatic.tujia.com/modules//static/imgs/unfavorate.png&quot;);"></div>'//点赞图标
+                    html+= '</div>'
+                }
+
+
+                $("#ddd").html(html);
+            }
+
+        })
+
+    }
+
+
+</script>
+
+<body style="background-color: rgb(127, 219, 247);">
+<noscript><strong>We're sorry but fe-cms-client doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong></noscript>
+<div class="promotion-wrap pc-wrap"><!---->
+    <div data-v-767e823a="" class="pc-activity-header">
+        <header data-v-767e823a=""><a data-v-767e823a="" href="https://www.tujia.com/" target="_blank" title="途家网首页"
+                                      class="tujia-logo"></a>
+            <ul data-v-767e823a="" class="nav-list">
+                <li data-v-767e823a=""><a data-v-767e823a="" href="https://www.tujia.com/" target="_blank"
+                                          class="home-link">首页</a></li>
+                <li data-v-767e823a=""><a data-v-767e823a="" href="https://travel.tujia.com/" target="_blank">发现</a>
+                </li>
+            </ul>
+            <div data-v-767e823a="" class="header-search"><span data-v-767e823a="" class="log-reg"><a data-v-767e823a=""
+                                                                                                      href="https://passport.tujia.com/PortalSite/LoginPage/?srcUrl=https://pwa.tujia.com/modules/?id=T20190411144657&amp;code=tjwydczhcpcsyjd&amp;srcLocalSite=goSite&amp;tujia_code=tjwydczhcpcsyjd&amp;refurl=https%3A%2F%2Fwww.tujia.com%2F&amp;istjsite=true">登录</a><span
+                    data-v-767e823a="">|</span><a data-v-767e823a="" id="btnHeaderLogin" href="https://passport.tu.com/PortalSite/Register/"class="reg">注册</a></span></div>
+        </header>
+    </div>
+
+    <section data-v-0ffc5ee4="" id="comp_id_30" padding="1">
+        <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+            <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"><img data-v-12c36dbd="" width="100%"
+                                                                                 src="/途家民宿五一大促_files/201904121544157067.jpg">
+            </div>
+        </section>
+        <div data-v-0ffc5ee4="" compindex="0" compprops="[object Object]"></div>
+    </section>
+    <section data-v-0ffc5ee4="" id="comp_id_31" padding="0">
+        <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+            <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件">
+                <img data-v-12c36dbd="" width="100%" src="/途家民宿五一大促_files/201904121312097381.png">
+            </div>
+        </section>
+        <div data-v-0ffc5ee4="" compindex="1" compprops="[object Object]"></div>
+    </section>
+   <section id="comp_id_33">
+        <section data-v-3a8ceec4="" class="comp-redpacket" compid="33">
+           <!-- <div data-v-3a8ceec4="" data-actionid="2" data-itemtext="红包类组件"
+                 data-itemotherinfo="id=168783774594797568&amp;status=4"><img data-v-3a8ceec4="" width="100%"
+                                                                              src="/途家民宿五一大促_files/201904151617114822.png">
+            </div>-->
+
+
+        </section><!----></section>
+    <!--<section id="comp_id_34">
+        <section data-v-3a8ceec4="" class="comp-redpacket" compid="34">
+            <div data-v-3a8ceec4="" data-actionid="2" data-itemtext="红包类组件"
+                 data-itemotherinfo="id=168750063018868736&amp;status=1"><img data-v-3a8ceec4="" width="100%"
+                                                                              src="/途家民宿五一大促_files/201904121153064820.png">
+            </div>
+            <div data-v-3a8ceec4="" data-actionid="2" data-itemtext="红包类组件"
+                 data-itemotherinfo="id=168749856659247104&amp;status=1"><img data-v-3a8ceec4="" width="100%"
+                                                                              src="/途家民宿五一大促_files/201904121153338235.png">
+            </div>
+        </section>&lt;!&ndash;&ndash;&gt;</section>
+    <section id="comp_id_35">
+        <section data-v-3a8ceec4="" class="comp-redpacket" compid="35">
+            <div data-v-3a8ceec4="" data-actionid="2" data-itemtext="红包类组件"
+                 data-itemotherinfo="id=168749679797895168&amp;status=1"><img data-v-3a8ceec4="" width="100%"
+                                                                              src="/途家民宿五一大促_files/201904121154012501.png">
+            </div>
+            <div data-v-3a8ceec4="" data-actionid="2" data-itemtext="红包类组件"
+                 data-itemotherinfo="id=168749118994284544&amp;status=1"><img data-v-3a8ceec4="" width="100%"
+                                                                              src="/途家民宿五一大促_files/201904121155466648.png">
+            </div>
+        </section>&lt;!&ndash;&ndash;&gt;</section>-->
+    <!--<section data-v-0ffc5ee4="" id="comp_id_36" padding="0">
+        <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+            <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"><img data-v-12c36dbd="" width="100%"
+                                                                                 src="/途家民宿五一大促_files/201904122015431707.png">
+            </div>
+        </section>
+        <div data-v-0ffc5ee4="" compindex="5" compprops="[object Object]"></div>
+    </section>-->
+    <section data-v-0ffc5ee4="" id="comp_id_37" padding="0">
+        <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+            <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"><img data-v-12c36dbd="" width="100%"
+                                                                                 src="/途家民宿五一大促_files/201904151658212715.jpg">
+            </div>
+        </section>
+        <div data-v-0ffc5ee4="" compindex="6" compprops="[object Object]"></div>
+    </section>
+
+    <section data-v-413e80ef="" id="comp_id_39">
+        <nav data-v-413e80ef="" class="swiper-container tab-nav-0 swiper-container-horizontal swiper-container-free-mode" style="background-color: rgb(18, 201, 255);">
+            <div data-v-413e80ef="" class="swiper-wrapper tab-item-0" style="transform: translate3d(0px, 0px, 0px);">
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="北京"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-active" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 600;" ><a href="javascript:diyi(1)">北京</a></div>
+                    <div data-v-413e80ef="" style="background-color: rgb(255, 255, 255);"></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="重庆"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-next" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:diyi(4)">重庆</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="杭州" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:diyi(99)">杭州</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <!--<div data-v-413e80ef="" data-actionid="4" data-itemtext="苏州" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">苏州</div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="大理" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">大理</div>
+                    <div data-v-413e80ef=""></div>
+                </div>--><!----></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </nav>
+    </section>
+<!--第一-->
+        <section data-v-413e80ef="" id="comp_id_TAB_CONTENT_39_1_2" tabindex="0">
+            <section data-v-21840e8a="" class="single-col">
+
+                <div class="list-imgzy" id="aaa">
+
+                </div>
+
+            </section><!----></section>
+
+
+
+        <!--<section data-v-0ffc5ee4="" data-v-413e80ef="" id="comp_id_TAB_CONTENT_39_1_3" padding="0" tabindex="0">
+            <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+                <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"
+                     data-itemotherinfo="https://go.tujia.com/13147/?cityId=48&amp;code=tjcjdczhcgnpc"><img
+                        data-v-12c36dbd="" width="100%" src="/途家民宿五一大促_files/201904121316201297.png"></div>
+            </section>
+            <div data-v-0ffc5ee4="" compindex="7_0" compprops="[object Object]"></div>
+        </section>-->
+
+
+
+
+
+    <section data-v-0ffc5ee4="" id="comp_id_40" padding="0">
+        <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+            <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"><img data-v-12c36dbd="" width="100%"
+                                                                                 src="/途家民宿五一大促_files/201904121316027978.png">
+            </div>
+        </section>
+        <div data-v-0ffc5ee4="" compindex="8" compprops="[object Object]"></div>
+    </section>
+    <section data-v-413e80ef="" id="comp_id_41">
+        <nav data-v-413e80ef=""
+             class="swiper-container tab-nav-0 swiper-container-horizontal swiper-container-free-mode"
+             style="background-color: rgb(18, 201, 255);">
+            <div data-v-413e80ef="" class="swiper-wrapper tab-item-0" style="transform: translate3d(0px, 0px, 0px);">
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="上海"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-active" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 600;"><a href="javascript:dier(3)">上海</a></div>
+                    <div data-v-413e80ef="" style="background-color: rgb(255, 255, 255);"></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="广州"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-next" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:dier(213)">广州</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="三亚" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:dier(279)">三亚</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <!--<div data-v-413e80ef="" data-actionid="4" data-itemtext="西安" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">西安</div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="昆明" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">昆明</div>
+                    <div data-v-413e80ef=""></div>
+                </div>--><!----></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></nav>
+    </section>
+     <!--第二-->
+
+
+        <section data-v-413e80ef="" id="comp_id_TAB_CONTENT_41_6_2" tabindex="0">
+            <section data-v-21840e8a="" class="single-col">
+        <div data-v-21840e8a="" class=""  id="eee">
+
+        </div>
+            </section>
+        </section>
+
+
+
+
+        <!--<section data-v-0ffc5ee4="" data-v-413e80ef="" id="comp_id_TAB_CONTENT_41_6_3" padding="0" tabindex="0">
+            <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+                <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"
+                     data-itemotherinfo="https://go.tujia.com/13147/?cityId=23&amp;code=tjcjdczhcgnpc"><img
+                        data-v-12c36dbd="" width="100%" src="/途家民宿五一大促_files/201904121320056531.png"></div>
+            </section>
+            <div data-v-0ffc5ee4="" compindex="9_0" compprops="[object Object]"></div>
+        </section>-->
+    </section>
+    <section data-v-0ffc5ee4="" id="comp_id_42" padding="0">
+        <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+            <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"><img data-v-12c36dbd="" width="100%"
+                                                                                 src="/途家民宿五一大促_files/201904121323558389.png">
+            </div>
+        </section>
+        <div data-v-0ffc5ee4="" compindex="10" compprops="[object Object]"></div>
+    </section>
+    <section data-v-413e80ef="" id="comp_id_43">
+        <nav data-v-413e80ef=""
+             class="swiper-container tab-nav-0 swiper-container-horizontal swiper-container-free-mode"
+             style="background-color: rgb(18, 201, 255);">
+            <div data-v-413e80ef="" class="swiper-wrapper tab-item-0" style="transform: translate3d(0px, 0px, 0px);">
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="成都"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-active" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 600;"><a href="javascript:disan(248)">成都</a></div>
+                    <div data-v-413e80ef="" style="background-color: rgb(255, 255, 255);"></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="南京"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-next" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:disan(86)">南京</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="武汉" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:disan(182)">武汉</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+               <!-- <div data-v-413e80ef="" data-actionid="4" data-itemtext="长沙" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">长沙</div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="丽江" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">丽江</div>
+                    <div data-v-413e80ef=""></div>
+                </div>--><!----></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></nav>
+
+        <!--第三-->
+        <section data-v-413e80ef="" id="comp_id_TAB_CONTENT_43_11_2" tabindex="0">
+            <section data-v-21840e8a="" class="single-col">
+                <div data-v-21840e8a="" class="" id="ccc">
+                </div>
+            </section>
+        </section>
+
+
+
+       <!-- <section data-v-0ffc5ee4="" data-v-413e80ef="" id="comp_id_TAB_CONTENT_43_11_3" padding="0" tabindex="0">
+            <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+                <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"
+                     data-itemotherinfo="https://go.tujia.com/13147/?cityId=10&amp;code=tjcjdczhcgnpc"><img
+                        data-v-12c36dbd="" width="100%" src="/途家民宿五一大促_files/201904121325464162.png"></div>
+            </section>
+            <div data-v-0ffc5ee4="" compindex="11_0" compprops="[object Object]"></div>
+        </section>-->
+    </section>
+
+
+
+
+
+
+
+
+    <section data-v-0ffc5ee4="" id="comp_id_44" padding="0">
+        <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+            <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"><img data-v-12c36dbd="" width="100%"
+                                                                                 src="/途家民宿五一大促_files/201904121327433478.png">
+            </div>
+        </section>
+        <div data-v-0ffc5ee4="" compindex="12" compprops="[object Object]"></div>
+    </section>
+    <section data-v-413e80ef="" id="comp_id_46">
+        <nav data-v-413e80ef=""
+             class="swiper-container tab-nav-0 swiper-container-horizontal swiper-container-free-mode"
+             style="background-color: rgb(18, 201, 255);">
+            <div data-v-413e80ef="" class="swiper-wrapper tab-item-0" style="transform: translate3d(0px, 0px, 0px);">
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="深圳"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-active" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 600;"><a href="javascript:disi(214)">深圳</a></div>
+                    <div data-v-413e80ef="" style="background-color: rgb(255, 255, 255);"></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="厦门"
+                     class="swiper-slide tab-sub-item-0 swiper-slide-next" style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:disi(128)">厦门</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="青岛" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;"><a href="javascript:disi(148)">青岛</a></div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <!--<div data-v-413e80ef="" data-actionid="4" data-itemtext="天津" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">天津</div>
+                    <div data-v-413e80ef=""></div>
+                </div>
+                <div data-v-413e80ef="" data-actionid="4" data-itemtext="珠海" class="swiper-slide tab-sub-item-0"
+                     style="padding-left: 1.3333rem;">
+                    <div data-v-413e80ef="" style="color: rgb(255, 255, 255); font-weight: 400;">珠海</div>
+                    <div data-v-413e80ef=""></div>
+                </div>--><!----></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></nav>
+        <!--第四-->
+        <section data-v-413e80ef="" id="comp_id_TAB_CONTENT_46_16_2" tabindex="0">
+            <section data-v-21840e8a="" class="single-col">
+                <div data-v-21840e8a="" class="" id="ddd">
+
+
+                    </div>
+
+            </section><!----></section>
+
+
+
+
+
+
+  <!--      <section data-v-0ffc5ee4="" data-v-413e80ef="" id="comp_id_TAB_CONTENT_48_21_3" padding="0" tabindex="0">
+            <section data-v-12c36dbd="" data-v-0ffc5ee4="" class="comp-image-tiled">
+                <div data-v-12c36dbd="" data-actionid="1" data-itemtext="图片类组件"
+                     data-itemotherinfo="https://go.tujia.com/13147/?cityId=4191&amp;code=tjcjdczhchwpc"><img
+                        data-v-12c36dbd="" width="100%" src="/途家民宿五一大促_files/201904121333526141.png"></div>
+            </section>
+            <div data-v-0ffc5ee4="" compindex="15_0" compprops="[object Object]"></div>
+        </section>-->
+    </section>
+
+    <section data-v-476d14dc="" class="float-wrap">
+        <div data-v-476d14dc="" class="float-floor" style="visibility: hidden;"><a data-v-476d14dc="" data-actionid="8">
+            <!----></a></div>
+        <div data-v-476d14dc="" class="go-top" style="visibility: hidden;"><i data-v-476d14dc="" class="go-top-icon"
+                                                                              style="background-image: url(&quot;https://pwastatic.tujia.com/modules/static/imgs/top-btn.png&quot;);"></i>
+        </div>
+    </section>
+    <section data-v-23b8ec78="" class="share-wrap" style="top: 0px;"><!----><!----><!----></section><!----><!---->
+    <!----></div>
+<!--<script src="/途家民宿五一大促_files/swiper.min.js.下载"></script>
+<script src="/途家民宿五一大促_files/chunk-vendors.4075cd8b.js.下载"></script>
+<script src="/途家民宿五一大促_files/app.23b78843.js.下载"></script>
+<script async="" src="/途家民宿五一大促_files/vds.js.下载"></script>
+<script async="" src="/途家民宿五一大促_files/hm.js.下载"></script>-->
+</body>
+</html>

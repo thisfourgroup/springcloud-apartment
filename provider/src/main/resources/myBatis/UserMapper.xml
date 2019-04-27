@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.mapper.UserMapper">
+<!--注册-->
+    <!--<select id="findCount" parameterType="string" resultType="int">
+      select count(1) from t_user where phonenumber=#{value}
+    </select>
+
+    <select id="saveReg" parameterType="com.jk.pojo.UserBean">
+        insert into t_user(phonenumber,password) values(#{phonenumber},#{password})
+    </select>-->
+</mapper>
