@@ -10,14 +10,24 @@
         <module name="apartment-feign" />
         <module name="apartment-provider" />
         <module name="common" />
+        <module name="springcloud-feign-zdg" />
+        <module name="springcloud-provider-zdg" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apartment-feign-zdg" target="1.8" />
+      <module name="apartment-provider-zdg" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="apartment-eureka" options="-parameters" />
       <module name="apartment-feign" options="-parameters" />
+      <module name="apartment-feign-zdg" options="-parameters" />
       <module name="apartment-provider" options="-parameters" />
+      <module name="apartment-provider-zdg" options="-parameters" />
+      <module name="springcloud-feign-zdg" options="-parameters" />
+      <module name="springcloud-provider-zdg" options="-parameters" />
     </option>
   </component>
 </project>

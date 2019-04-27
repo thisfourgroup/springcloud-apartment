@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入jequery -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- 引入bootstrap的css、js文件 -->
+    <script type="text/javascript" src="/js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.css">
+    <!-- 引入date日期的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!-- 引入文件上传的css、js -->
+    <script src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">
+</head>
+<body>
+<div class="container-fluid">
+    <form class="form-horizontal" id="userForm1" method="post">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="commentinfo">评论内容:</label>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!--隐藏id-->
+                <input type="hidden" name="commentid" id="commentid">
+                <input type="text" class="form-control" name="commentinfo" id="commentinfo" placeholder="请输入评论内容...">
+            </div>
+            <!--<div class="col-md-2">
+                <div class="form-group">
+                    <label for="commenttime">评论时间:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control date" name="commenttime" id="commenttime" placeholder="请输入评论时间...">
+            </div>-->
+        </div>
+
+
+    </form>
+</div>
+
+</body>
+<script>
+
+    //时间
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        //format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        format: 'yyyy-mm-dd ',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });
+ </script>
+</html>

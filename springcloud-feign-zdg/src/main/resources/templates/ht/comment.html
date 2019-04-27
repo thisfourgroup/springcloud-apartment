@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入jequery -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- 引入bootstrap的css、js文件 -->
+    <script type="text/javascript" src="/js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.css">
+    <!-- 引入table的css、js -->
+    <script type="text/javascript" src="/js/bootstrap-table/bootstrap-table.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-table/bootstrap-table.css">
+    <script type="text/javascript" src="/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <!-- 引入bootbox的js -->
+    <script type="text/javascript" src="/js/bootbox/bootbox.all.min.js"></script>
+</head>
+<body>
+<div>
+    <button type="button" class="btn btn-info" onclick="openAdd()">新增</button>
+</div>
+<!-- 定义表格 -->
+<div id="userTable"></div>
+</body>
+<script>
+    $(function(){
+        inituserTable();
+     })
+    //修改
+    function openUpdate(commentid){
+        //打开修改弹框
+        openUpdateDialog();
+
+        //查询回显数据
+        $.ajax({
+            url:'/queryCommentid',
+            type:'post',
+            async:false,//同步
+            data:{commentid:commentid},
+            dataType:'json',
+            success:function(data) {
+
+                $('#commentid').val(data.commentid);
+                $('#commentinfo').val(data.commentinfo);
+                $('#commenttime').val(data.commenttime);
+
+
+            }
+        })
+    }
+    //打开修改弹框
+    function openUpdateDialog(){
+        bootbox.dialog({
+            title:'修改用户',
+            message: createAddContent("/page/toAdd1"),
+            closeButton: true,//是否显示关闭按钮
+            buttons : {
+                "success" : {
+                    "label" : "<i class='icon-ok'></i> 保存",
+                    "className" : "btn-sm btn-success",
+                    "callback" : function() {
+                        $.ajax({
+                            url:'/addComment',
+                            type:'post',
+                            dataType:'json',
+                            data:$("#userForm1").serialize(),
+                            success:function(data){
+                                if(data){
+                                    inituserTable();
+                                }else{
+                                    bootbox.alert({
+                                        size:"amall",
+                                        title:"提示",
+                                        massage:'修改失败',
+                                    })
+                                }
+
+                            }
+                        });
+                    }
+                },
+                "cancel" : {
+                    "label" : "<i class='icon-info'></i> 取消",
+                    "className" : "btn-sm btn-danger",
+                    "callback" : function() {
+
+                    }
+                }
+            }
+
+        });
+    }
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+    //新增
+    function openAdd(){
+        bootbox.dialog({
+            title:'添加用户',
+            message: createAddContent("/page/toAdd1"),
+            closeButton: true,//是否显示关闭按钮
+            buttons : {
+                "success" : {
+                    "label" : "<i class='icon-ok'></i> 保存",
+                    "className" : "btn-sm btn-success",
+                    "callback" : function() {
+                        $.ajax({
+                            url:'/addComment',
+                            type:'post',
+                            dataType:'json',
+                            data:$("#userForm1").serialize(),
+                            success:function(data){
+                                if(data){
+                                    inituserTable();
+                                }else{
+                                    bootbox.alert({
+                                        size:"amall",
+                                        title:"提示",
+                                        massage:'新增失败',
+                                    })
+                                }
+
+                            }
+                        });
+                    }
+                },
+                "cancel" : {
+                    "label" : "<i class='icon-info'></i> 取消",
+                    "className" : "btn-sm btn-danger",
+                    "callback" : function() {
+
+                    }
+                }
+            }
+
+        });
+
+    }
+
+    //初始化表格数据
+    function inituserTable() {
+        $("#userTable").bootstrapTable({
+            url:'/selectComment',
+            //toolbar:'#toolbar',
+            pagination:true,//是否展示分页
+            pageList:[2,5,10,20],//分页组件
+            pageNuber:1,
+            pageSize:1,//默认每页条数
+            queryParams:function(){
+                return {
+                    page:this.pageNumber,
+                    rows:this.pageSize,
+
+                }
+            },
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+            columns: [
+                {checkbox:true},
+
+
+                {field:'commentid',title:'评论主键',align:'center',width:100},
+                {field:'commentinfo',title:'评论内容',align:'center',width:100},
+                {field:'commenttime',title:'评论时间',align:'center',width:100},
+
+
+                {field:'123',title:'操作',formatter:function(value,row,index){
+                        return '<a href="javascript:delone('+row.commentid+')">删除</a>'+
+                            '| <a href="javascript:openUpdate('+row.commentid+')">修改</a>'
+                         /*   + '| <a href="javascript:openPing('+row.id+')">评论</a>'*/
+                    }}
+
+
+            ]
+        })
+    }
+    //批删
+    function delmany(){
+        var ids = '';
+        var books = $("#bookTable").bootstrapTable("getSelections");
+        for (var i = 0; i < books.length; i++) {
+            ids += ids == '' ? books[i].bookId : ","+books[i].bookId
+        }
+        delBook(ids);
+    }
+    //单删
+    function delone(commentid){
+        delBook(commentid)
+    }
+    //删除提出公共代码
+    function delBook(ids){
+        bootbox.confirm({
+            size:"small",
+            message:"你确定要删除吗？",
+            callback:function(result){
+                if(result){
+                    $.ajax({
+                        url:'/deleteComment',
+                        type:'post',
+                        data:{ids:ids},
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                searchUser();
+                            }else{
+                                bootbox.alert({
+                                    size:"amall",
+                                    title:"提示",
+                                    massage:'删除失败',
+                                })
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+</script>
+</html>

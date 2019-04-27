@@ -1,0 +1,123 @@
+/*日历  ----------------------------------------------------------------------------------------------------*/
+
+#calprev.disabled {
+    cursor: default;
+    background-position: 0 -19px;
+}
+#calnext.disabled {
+    cursor: default;
+    background-position: -23px -19px;
+}
+.calendarBox {
+    position: relative;
+    width: 348px;
+    padding: 4px 50px 20px;
+    border: 1px solid #ccc;
+    font-family: Tahoma;
+    background: #FFF;
+    z-index: 10000;
+}
+.calPrev,
+.calNext {
+    width: 22px;
+    height: 19px;
+    background: url(../images/cal_btn.png) no-repeat;
+    cursor: pointer;
+}
+.calPrev em,
+.calNext em {
+    display: none;
+}
+.calPrev {
+    position: absolute;
+    left: 16px;
+    top: 96px;
+    background-position: 0 0;
+}
+.calNext {
+    position: absolute;
+    right: 16px;
+    top: 96px;
+    background-position: -23px 0;
+}
+.calendar {
+    float: left;
+    width: 164px;
+    padding: 0 5px;
+    font-family: Tahoma;
+}
+.calendar h2 {
+    font-size: 12px;
+    padding: 8px 0 2px;
+    text-align: center;
+    color: #f60;
+    font-weight: bold;
+}
+.calendar table {
+    width: 164px;
+}
+.calendar th {
+    background: #999;
+    width: 23px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #999;
+}
+.calendar td {
+    text-align: center;
+    border: 1px solid #E9E9E9;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.calendar td.disabled {
+    color: #ccc;
+    background: #f8f8f8;
+    cursor: default;
+}
+.calendar td.current {
+    border: 2px solid #eb7424;
+    color: #FF6600;
+    height: 18px;
+    line-height: 18px;
+}
+.calendar td.delete {
+    color: #ccc;
+    text-decoration: line-through;
+    cursor: default
+}
+.calendar td:hover {
+    color: #f60;
+}
+.calendar td.disabled:hover {
+    color: #ccc;
+}
+
+/*列表页哪天有房*/
+
+#tips {
+    width: 174px;
+    padding: 4px 30px 0;
+}
+#tips .calPrev,
+#tips .calNext {
+    top: 96px
+}
+#tips .calPrev {
+    left: 6px;
+}
+#tips .calNext {
+    right: 6px;
+}
+#tips .cal-close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url(../Images/calendarCloseBtn.png) no-repeat;
+}

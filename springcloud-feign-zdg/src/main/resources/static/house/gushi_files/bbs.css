@@ -1,0 +1,180 @@
+
+/* 故事页面 */
+.story-banner {
+    position: relative;
+    margin-bottom: 40px;
+    height: 301px;
+}
+.pub-storyBtn {
+    position: absolute;
+    bottom: 60px;
+    right: 54px;
+}
+.pub-storyBtn a {
+    display: block;
+    width: 188px;
+    height: 47px;
+    background: #ff9900;
+	border: 2px solid #ff9900;
+	color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 47px;
+	text-decoration: none;
+}
+
+.sto-lis {
+    margin: -30px 0 0 -23px;
+}
+.sto-lis li {
+    float: left;
+    margin: 30px 0 0 23px;
+    width: 270px;
+    height: 354px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.sto-lis li:hover,
+.sto-lis li.active {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.19);
+}
+.stPeo-mg {
+    margin-bottom: 10px;
+    width: 270px;
+    height: 270px;
+}
+.stPeo-mg img {
+    display: block;
+}
+.stPeo-info {
+    text-align: center;
+    line-height: 2;
+}
+.user-cont {
+    color: #666;
+}
+.story-txt {
+    display: inline-block;
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.story-txt a {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 论坛页面 */
+.art-wrap {
+    padding: 10px 30px 30px 30px;
+    background: #fff;
+}
+.art-wrap table {
+    width: 100%;
+}
+.art-wrap td {
+    height: 90px;
+    vertical-align: middle;
+}
+.art-wrap td.td2 {
+    border-bottom: 1px dashed #ddd;
+    line-height: 1.8;
+}
+.art-wrap .user-wrap img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.bs-titBox {
+    font-size: 18px;
+}
+.rec-tag {
+    display: inline-block;
+    vertical-align: 2px;
+    width: 33px;
+    height: 18px;
+    background: #ff9900;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+.bs-infBox {
+    color: #999;
+}
+.bs-infBox .i-ico {
+    margin-right: 0;
+}
+
+/* 去哪玩页面 */
+.where-notes-list li {
+    height: 200px;
+}
+.where-page-num {
+    margin-top: -20px;
+}
+
+/* 文章页 */
+.article-banner .pic{
+    position: relative;
+}
+.article-banner .pic img{
+    display: block;
+}
+.article-banner h2{
+    position: absolute;
+    left: 120px;
+    bottom:8px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+.article-banner .info{
+    height: 70px;
+    border:1px solid #e9e9e9;
+    border-top: 0;
+    position: relative;
+    background-color: #fefefe;
+    box-shadow: 0 0 3px #ddd;
+}
+.article-banner .author-pic{
+    position: absolute;
+    top:-40px;
+    left: 20px;
+}
+.article-banner .author-pic img{
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.article-banner .author-data{
+    padding-top:20px;
+    margin-left:120px;
+    color:#999;
+}
+.article-banner .author-data span{
+    padding:0 10px;
+    border-left: 1px solid #ccc;
+}
+.article-banner .author-data .author-name{
+    margin-right: 10px;
+    color:#69c;
+}
+.article-banner .icon-link{
+    position: absolute;
+    right: -1px;
+    top: 20px;
+}
+.icon-link a {
+    padding: 0 20px;
+    border-right: 1px solid #ddd;
+    line-height: 1;
+}
+.icon-link a:hover {
+    color: #ff9900;
+}
+
+
+

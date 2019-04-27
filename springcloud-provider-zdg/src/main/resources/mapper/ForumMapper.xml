@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jk.zdg.dao.ForumDao">
+
+    <!-- 分页查询 -->
+    <select id="selectForum" resultType="com.jk.zdg.pojo.ForumBean">
+       select
+        a.forumlabelid,a.forumbrowse,a.forumcollect,a.forumcommentid,a.forumid,a.forumimg,a.foruminfo,a.forumlike,a.forumupdate,a.forumuser,a.forumname,a.url,
+        b.commentid,b.houseid,b.id,b.userid,
+        c.commentid,c.commentinfo as commentinfo,c.commenttime as commenttime,
+        d.id,d.name,d.sex,date_format(d.brithdate,'%y-%m-%d') as brithdate,d.image,
+        e.provincename,
+        f.cityname,
+        g.educationname,
+        h.workname,
+        i.id,i.forumlabel
+        from t_forum a  left join t_comment_user_house b on a.forumcommentid=b.commentid
+        left join t_comment c on  b.commentid=c.commentid
+        left join  t_user d on d.id=b.houseid
+        left join t_province  e on d.provinceid =e.provinceid
+        left join t_city  f on d.cityid = f.cityid
+        left join t_education g on d.educationid = g.educationid
+        left join t_work h on d.workid = h.workid
+        left join  t_forumlabel i on i.id= a.forumlabelid
+        <include refid="queryPage"></include>
+            limit #{start},#{rows}
+    </select>
+    <!-- 条件查询 -->
+    <sql id="queryPage">
+        where 1 = 1
+        <!-- 条查 房东查询：  地区查询： -->
+        <if test="forumBean.name!=null and forumBean.name!=''">
+            and d.name like '%${forumBean.name}%'
+        </if>
+        <!-- 条查 房东查询：  地区查询： -->
+        <!--<if test="forumBean.cityid!=null and forumBean.cityid!=''">
+            and f.cityid = #{forumBean.cityid}
+        </if>-->
+        <!-- 条查 房东查询：  地区pid查询： -->
+        <if test="forumBean.pid!=null and forumBean.pid!=''">
+            and f.pid = #{forumBean.pid}
+        </if>
+       /* private  String  provincename	;    // 省    精确                   */
+        <if test="forumBean.provinceAndcityname!=null and forumBean.provinceAndcityname!=''">
+            and e.provincename =#{forumBean.provinceAndcityname}  or f.cityname =#{forumBean.provinceAndcityname}
+        </if>
+
+        <!-- forumid查询： -->
+        <if test="forumBean.forumid!=null and forumBean.forumid!=''">
+            and a.forumid = #{forumBean.forumid}
+        </if>
+
+    </sql>
+
+
+
+    <!-- 时间分页查询 -->
+    <select id="queryForumshijian" resultType="com.jk.zdg.pojo.ForumBean">
+        select
+        a.forumlabelid,a.forumbrowse,a.forumcollect,a.forumcommentid,a.forumid,a.forumimg,a.foruminfo,a.forumlike,a.forumupdate,a.forumuser,a.forumname,a.url,
+        b.commentid,b.houseid,b.id,b.userid,
+        c.commentid,c.commentinfo as commentinfo,c.commenttime as commenttime,
+        d.id,d.name,d.sex,date_format(d.brithdate,'%y-%m-%d') as brithdate,d.image,
+        e.provincename,
+        f.cityname,
+        g.educationname,
+        h.workname,
+        i.id,i.forumlabel
+        from t_forum a  left join t_comment_user_house b on a.forumcommentid=b.commentid
+        left join t_comment c on  b.commentid=c.commentid
+        left join  t_user d on d.id=b.houseid
+        left join t_province  e on d.provinceid =e.provinceid
+        left join t_city  f on d.cityid = f.cityid
+        left join t_education g on d.educationid = g.educationid
+        left join t_work h on d.workid = h.workid
+        left join  t_forumlabel i on i.id= a.forumlabelid
+          order by  a.forumupdate  desc
+        limit #{start},#{rows}
+    </select>
+
+    <!-- 浏览量分页查询 -->
+    <select id="queryForumliulan" resultType="com.jk.zdg.pojo.ForumBean">
+        select
+        a.forumlabelid,a.forumbrowse,a.forumcollect,a.forumcommentid,a.forumid,a.forumimg,a.foruminfo,a.forumlike,a.forumupdate,a.forumuser,a.forumname,a.url,
+        b.commentid,b.houseid,b.id,b.userid,
+        c.commentid,c.commentinfo as commentinfo,c.commenttime as commenttime,
+        d.id,d.name,d.sex,date_format(d.brithdate,'%y-%m-%d') as brithdate,d.image,
+        e.provincename,
+        f.cityname,
+        g.educationname,
+        h.workname,
+        i.id,i.forumlabel
+        from t_forum a  left join t_comment_user_house b on a.forumcommentid=b.commentid
+        left join t_comment c on  b.commentid=c.commentid
+        left join  t_user d on d.id=b.houseid
+        left join t_province  e on d.provinceid =e.provinceid
+        left join t_city  f on d.cityid = f.cityid
+        left join t_education g on d.educationid = g.educationid
+        left join t_work h on d.workid = h.workid
+        left join  t_forumlabel i on i.id= a.forumlabelid
+         order by a.forumbrowse  desc
+        limit #{start},#{rows}
+    </select>
+
+</mapper>
+
+
+
+
+
+

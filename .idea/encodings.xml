@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/apartment-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/apartment-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apartment-feign-zdg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/apartment-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apartment-provider-zdg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-feign-zdg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-provider-zdg" charset="UTF-8" />
   </component>
 </project>

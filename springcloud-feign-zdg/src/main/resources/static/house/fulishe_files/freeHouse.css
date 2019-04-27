@@ -1,0 +1,2267 @@
+﻿
+body{
+    color:#333;
+    background:#f8f8f8;
+}
+/*==============================个人主页-我的免费房申请单===================================*/
+.application-list-wrapper{
+    padding: 0px 30px 40px;
+    background-color: #FFF;
+    min-height: 1020px;
+}
+.application-item{
+    padding-top: 30px;
+}
+.application-item table{
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.application-item tr th{
+    background-color: #f8f8f8;
+    height: 38px;
+    line-height: 38px;
+    color: #999;
+    border-left: none;
+    border-right: none;
+}
+.application-item tr td{
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+    padding: 10px 0;
+    height: 60px;
+}
+.application-item .house-img{
+    border-right: none;
+    width: 90px;
+}
+.application-item .house-title{
+    width: 155px;
+    border-left: none;
+    text-align: left;
+}
+.application-item .order{
+    color: #333;
+    text-align: left;
+    padding-left: 10px;
+}
+.application-item .order-number{
+    color: #6699cc;
+    font-weight: bold;
+}
+.application-item .a_link{
+    color: #3b83cb;
+    line-height: 20px;
+    display: block;
+}
+.application-item .col_min{
+    width: 95px;
+}
+/*=====================================申请免费房===================================*/
+.house-index{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #333;
+    line-height: 42px;
+}
+.house-index b{
+    font-weight: bold;
+}
+.application-form-wrapper{
+    position: relative;
+    border: 1px solid #dddddd;
+    margin-top: 30px;
+    background-color: #fff;
+    width: 700px;
+}
+.application-form-title{
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #dddddd;
+    padding-left: 20px;
+}
+.application-form{
+    margin: 65px auto;
+    width: 375px;
+}
+.application-form .item{
+    line-height: 28px;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 14px;
+}
+.application-form .item:after{
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.application-form .item .col-left{
+    float: left;
+    width: 114px;
+    text-align: right;
+}
+.application-form .item .col-left i{
+    color: #f00;
+    padding-right: 5px;
+}
+.application-form .item .col-right{
+    margin-left: 115px;
+}
+.application-form .item .input-box,
+.application-form .item .input-textarea{
+    width: 235px;
+    height: 28px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
+}
+.application-form .item .input-textarea{
+    width: 235px;
+    height: 46px;
+    line-height: 22px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+.application-form .item .input-box:focus,
+.application-form .item .input-textarea:focus{
+    border-color:#fc6;
+}
+.application-form .rules{
+    background: url(../Images/icon_rules.png) 13px center no-repeat;
+    line-height: 22px;
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 25px;
+    padding-left: 35px;
+}
+.application-form .item .quantity-wrapper {
+
+}
+.application-form .item .quantity-decrease,
+.application-form .item .quantity,
+.application-form .item .quantity-increase {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+}
+.application-form .item .quantity-decrease,
+.application-form .item .quantity-increase {
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #555;
+    display: block;
+    line-height: 28px;
+    width: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.application-form .item .quantity {
+    font-size: 12px;
+    color: #333;
+    border: solid #ccc;
+    border-width: 1px 0 1px 0;
+    line-height: 28px;
+    height: 28px;
+    width: 28px;
+    border-radius: 0;
+}
+
+.application-form .item .quantity-decrease.disabled,
+.application-form .item .quantity-increase.disabled {
+    color: #bbb;
+    background-color: #e8e8e8;
+    cursor: default;
+}
+.application-form .btn-wrapper{
+    margin-left: -20px;
+    text-align: center;
+}
+.application-form .btn-wrapper .a-submit,
+.application-form .btn-wrapper .a-cancel{
+    display: inline-block;
+    width: 96px;
+    height: 36px;
+    text-align: center;
+    font: 18px/34px "微软雅黑";
+    background-color: #F60;
+    color: #FFF;
+    border-radius: 3px;
+    margin-left: 20px;
+    border: 1px solid #ff6600;
+}
+.application-form .btn-wrapper .a-cancel{
+    background-color: #fff;
+    color: #f60;
+}
+/*====================================免费房列表页===================================*/
+.content-fH {
+    margin-top: 20px;
+}
+.content-fH img{
+    display: block;
+}
+.content-fH .left{
+    float: left;
+}
+.content-fH .freeHouse-introduce{
+    margin-left: 912px;
+    height: 298px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+}
+.content-fH .freeHouse-introduce .fH-intr-title{
+    height: 44px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: -6px;
+    padding-left: 19px;
+    background: url(../Images/titleBg-fH.png) left top no-repeat;
+}
+.content-fH .freeHouse-introduce .fH-intr-con{
+    color: #666666;
+}
+.content-fH .freeHouse-introduce .fH-intr-con li{
+    border-top: 1px dashed #dddddd;
+    padding: 10px;
+}
+.content-fH .freeHouse-introduce .fH-intr-con li.first{
+    border-top: none;
+}
+.content-fH .freeHouse-introduce .fH-intr-con h4{
+    font-size: 20px;
+    line-height: 28px;
+}
+.content-fH .freeHouse-introduce .fH-intr-con p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.banner-title-fH{
+    margin-top: 30px;
+    color: #666666;
+    font-size: 18px;
+    line-height: 1em;
+    border-left: 3px solid #ff6600;
+    padding-left: 10px;
+}
+.tab-wrap-fH{
+    margin-top: 28px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    background-color: #fff;
+}
+.tab-wrap-fH ul li{
+    float: left;
+    border-right: 1px solid #dddddd;
+    height: 68px;
+}
+.tab-wrap-fH ul li span{
+    display: inline-block;
+    padding: 0 40px;
+    border-top: 5px solid #fff;
+    line-height: 62px;
+    color: #666666;
+    font-size: 18px;
+    cursor: pointer;
+}
+.tab-wrap-fH ul li.current span{
+    border-top: 5px solid #ff6600;
+    color: #ff6e3c;
+}
+.freeHouse-show{
+    display: none;
+}
+.freeHouse-show .mg-wrap {
+    float: left;
+}
+.freeHouse-show .sidebar-wrap{
+    margin-left: 670px;
+    height: 358px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding: 30px 0 0 20px;
+    position: relative;
+}
+.freeHouse-show .sidebar-wrap .pay-info{
+    width: 94px;
+    height: 48px;
+    text-align:left;
+    position: absolute;
+    top: 30px;
+    right: -6px;
+    background: url(../Images/priceBg-fH.png) no-repeat;
+    color: #fff;
+    padding: 20px 0 0 20px;
+}
+.freeHouse-show .sidebar-wrap .pay-info .money-cont a,
+.freeHouse-show .sidebar-wrap .pay-info .money-cont{
+    font-size: 30px;
+    color: #fff;
+    font-family: Tahoma;
+    cursor: text;
+}
+.freeHouse-show .sidebar-wrap .pay-info .money-cont{
+    line-height:22px;
+    height:22px;
+}
+.freeHouse-show .sidebar-wrap .pay-info .money-cont:hover{
+    text-decoration:none;
+}
+.freeHouse-show .sidebar-wrap .pay-info .money-cont a:hover{
+    text-decoration:none;
+}
+
+.freeHouse-show .sidebar-wrap .pay-info .money-cont  dfn{
+    font: normal 12px arial;
+    vertical-align: 12px;
+}
+.freeHouse-show .sidebar-wrap .freeHouse-info{
+    width: 385px;
+}
+.freeHouse-show .sidebar-wrap .freeHouse-info h2 a{
+    color: #333333;
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.freeHouse-show .sidebar-wrap .freeHouse-info p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    height: 72px;
+    padding-top: 10px;
+}
+.freeHouse-show .sidebar-wrap .apply-info{
+    padding:25px 0  24px;
+    overflow:hidden;
+    margin-right:0px;
+}
+.freeHouse-show .sidebar-wrap .apply-info ul li{
+    font-size: 14px;
+    line-height: 30px;
+    color: #666666;
+}
+.freeHouse-show .sidebar-wrap .apply-info ul li .winners{
+    margin-top: -23px;
+    margin-left: 70px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+}
+.freeHouse-show .sidebar-wrap .apply-info ul li .winners .item{
+    display: inline-block;
+    width: 18%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.freeHouse-show .sidebar-wrap .apply-info ul li b{
+    font-weight: bold;
+}
+.freeHouse-show .sidebar-wrap .apply-info .red{
+    color: #ff3300;
+}
+.freeHouse-show .sidebar-wrap .apply-info .blue{
+    color: #3b83cb;
+}
+.freeHouse-show .sidebar-wrap .apply-info .ui_question {
+    font-style: normal;
+    font-family: "arial";
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    background-color: #3b83cb;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0px 10px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.freeHouse-show .sidebar-wrap .apply-info .apply-btn{
+    margin-top: 25px;
+    display: inline-block;
+    width: 150px;
+    height: 42px;
+    text-align: center;
+    font: 18px/42px "微软雅黑";
+    background-color: #F60;
+    color: #FFF;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.freeHouse-show .sidebar-wrap .apply-info .apply-btn:hover {
+    background-color: #F90;
+    text-decoration: none;
+}
+.freeHouse-show .sidebar-wrap .apply-info .apply-btn.off{
+    background-color: #999999;
+}
+.freeHouse-show .sidebar-wrap .apply-info .apply-btn.off:hover{
+    background-color: #999;
+}
+.freeHouse-show .sidebar-wrap .apply-info .apply-total{
+    margin-top: 25px;
+    display: inline-block;
+    height: 40px;
+    text-align: center;
+    font: 18px/40px "微软雅黑";
+    background-color: #fffaf4;
+    color: #ff9900;
+    border-radius: 3px;
+    margin-right: 20px;
+    padding: 0 15px;
+    border: 1px dashed #f19149;
+}
+.freeHouse-show .sidebar-wrap .apply-info .apply-total b{
+    font-weight: bold;
+}
+
+.freeHouse-list{
+    overflow: hidden;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.freeHouse-list li{
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 370px;
+    position: relative;
+}
+.freeHouse-list li .item{
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 200px;
+    width: 100px;
+    margin-left: -50px;
+}
+.freeHouse-list li .item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.freeHouse-list li .item h5{
+    text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.freeHouse-list li h3{
+    padding: 50px 20px 20px 20px;
+    font-size: 16px;
+    line-height: 1em;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    text-align: center;
+}
+.freeHouse-list li h3 a{
+    color: #333;
+}
+/*
+.freeHouse-list li p{
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999999;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+}
+.freeHouse-list li p .before,
+.freeHouse-list li p .after{
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+    background: url(../Images/icon-fH.png) left center no-repeat;
+    text-indent: 5em;
+    overflow: hidden;
+}
+
+.freeHouse-list li p .after{
+    background-position: right center;
+    width: 18px;
+}
+*/
+
+/*====================================免费房详情页===================================*/
+.wrap-mini {
+    width: 950px;
+    margin: 0px auto;
+    position: relative;
+}
+/*房屋展商图片*/
+body,html,.m-thumb,.m-thumb div,.m-thumb a,.m-thumb ul,.m-thumb ul li,.m-thumb img{
+    margin:0;
+    padding:0;
+}
+.m-thumb{
+    width:670px;
+    font-family:微软雅黑;
+    font-size:12px;
+}
+.m-thumb .pic-cont{
+    width:670px;
+    height:390px;
+    position:relative;
+}
+.m-thumb .loading-box img{
+    display:block;
+    width:670px;
+    height:390px;
+}
+.m-thumb .pic-cont .btn-box{
+    display:none;
+}
+.m-thumb .pic-cont:hover .btn-box{
+    display:block;
+}
+
+.m-thumb .pic-cont .btn-prev,
+.m-thumb .pic-cont .btn-next{
+    width: 58px;
+    height: 86px;
+    margin-top: -44px;
+    background:url(../Images/slide-btn-back.png) no-repeat;
+
+    overflow: hidden;
+    text-indent: -30000px;
+
+}
+.m-thumb .pic-cont .btn-prev{
+    position:absolute;
+    top:50%;
+    left:10px;
+    background-position:0 0;
+}
+.m-thumb .pic-cont .btn-next{
+    position:absolute;
+    top:50%;
+    right:10px;
+    background-position: -61px 0;
+}
+
+
+
+.m-thumb .pic-info{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    line-height:30px;
+    height:30px;
+    padding:0 10px;
+    color:#fff;
+    font-size:12px;
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+}
+:root .m-thumb .pic-info {
+    filter:none;
+    background-color:rgba(0,0,0,0.5);
+}
+.m-thumb .pic-info .pic-name{
+    float:left;
+}
+.m-thumb .pic-info .pic-tips{
+    float:right;
+}
+.m-thumb .pic-info .numbers-box{
+    font-family: Tahoma;
+}
+.m-thumb .pic-select{
+
+    height:64px;
+    background-color:#a9a9a9;
+}
+.m-thumb .pic-select .pic-list{
+    float:left;
+    width:550px;
+    position:relative;
+}
+.m-thumb .pic-select .pic-scroll{
+    width:480px;
+    margin-left:35px;
+    overflow:hidden;
+    position:relative;
+    height:54px;
+    margin-top:5px;
+}
+.m-thumb .pic-list .pic-scroll ul{
+    position:absolute;
+    height:54px;
+    overflow:hidden;
+
+}
+.m-thumb .pic-list .pic-scroll li{
+    list-style-type:none;
+    float:left;
+    width:80px;
+}
+.m-thumb .pic-list .pic-scroll img{
+    border:5px solid #a9a9a9;
+    display:block;
+    width:70px;
+    height:43px;
+    cursor:pointer;
+}
+.m-thumb .pic-list .pic-scroll img:hover{
+    border:5px solid #ddd;
+}
+.m-thumb .pic-list .pic-scroll .current,
+.m-thumb .pic-list .pic-scroll .current:hover{
+    border:5px solid #ebebeb;
+    cursor:default;
+}
+.m-thumb .pic-list .btn-prev,
+.m-thumb .pic-list .btn-next{
+    width:20px;
+    height:64px;
+    background:url(../Images/slide-btn-fH.png) no-repeat;
+}
+.m-thumb .pic-list .btn-prev{
+    position:absolute;
+    top:0;
+    left:10px;
+    background-position:0 -64px;
+}
+.m-thumb .pic-list .btn-next{
+    position:absolute;
+    top:0;
+    right:10px;
+    background-position:-20px -64px;
+}
+.m-thumb .pic-list .btn-prev:hover{
+    background-position:0 -128px ;
+}
+.m-thumb .pic-list .btn-next:hover{
+    background-position:-20px -128px ;
+}
+.m-thumb .pic-list .btn-prev-dis,
+.m-thumb .pic-list .btn-prev-dis:hover{
+    background-position:0 0 ;
+    cursor:default;
+}
+.m-thumb .pic-list .btn-next-dis,
+.m-thumb .pic-list .btn-next-dis:hover{
+    background-position:-20px 0 ;
+    cursor:default;
+}
+
+.m-thumb .pic-type-select{
+    margin-left:560px;
+    overflow:hidden;
+}
+.m-thumb .pic-type-select .select-box{
+    width:100px;
+
+}
+.m-thumb .pic-type-select .select-box .select-value{
+    display:block;
+    line-height:18px;
+    width:78px;
+    height:18px;
+    margin-top:18px;
+    padding:5px 10px;
+    background:#fff url(../Images/caret.png) no-repeat 90% center;
+    border:1px solid #999;
+    font-size:12px;
+    cursor:pointer;
+
+    outline: none
+}
+.m-thumb .pic-type-select .select-box .active{
+    background:#fff url(../Images/black-caret-up.png) no-repeat 90% center;
+}
+
+
+
+.m-thumb .ui-select {
+    position:relative;
+    z-index:9;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    background: #fff;
+    display:none;
+}
+
+.m-thumb .ui-select li {
+    padding: 0 10px;
+    list-style-type:none;
+}
+
+.m-thumb .ui-select .hover,
+.m-thumb .ui-select .current,
+.m-thumb .ui-select .mouseon {
+    background: #3b84cb;
+    color: #fff
+}
+
+
+
+
+
+.sidebar-content {
+    margin-left: 690px;
+}
+.detail-search{
+    padding:10px 0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    background-color:#fff;
+    overflow:hidden;
+}
+.detail-search .tab-content .ipt-text{
+    line-height:16px;
+    height:16px;
+    background-color:#f8f8f8;
+    border:1px solid #ddd;
+}
+.detail-search .tab-content .controls-span{
+    width:40px;
+    line-height:28px;
+    color:#999;
+    font-weight:normal;
+}
+.detail-search .tab-content .city-group .ipt-text {
+    width: 90px;
+    line-height:16px;
+    height:16px;
+    background: #f8f8f8 url(../Images/UnitList/caret.png) no-repeat 90% center;
+}
+.detail-search .tab-content .key-group .ipt-text{
+    width:160px;
+}
+.detail-search .tab-content .address-mark{
+    line-height:26px;
+}
+.form-horizontal .tab-content .icon-calendar,
+.form-horizontal .tab-content .icon-city,
+.form-horizontal .tab-content .icon-calendar-t {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+.form-horizontal .tab-content .search-btn-group {
+    width:130px;
+}
+.form-horizontal .tab-content .search-btn-group .search-btn{
+    width:130px;
+    height:30px;
+    background:#f90 url(../Images/i-search.png) no-repeat 36px center;
+    font: bold 14px/30px "微软雅黑";
+    color:#fff;
+    letter-spacing:0;
+    text-indent: 62px;
+    border-radius:3px;
+}
+
+.form-horizontal .tab-content .search-btn-group .search-btn:hover{
+    background:#f60 url(../Images/i-search.png) no-repeat 36px center;
+}
+.form-horizontal .tab-content .controls {
+    margin-left: 50px;
+}
+.form-horizontal  .tab-content .city-group{
+    width:110px;
+}
+.form-horizontal  .tab-content .date-group{
+    width:194px;
+    margin-left:10px;
+}
+.form-horizontal  .tab-content .key-group{
+    width:256px;
+}
+.form-horizontal .tab-content .search-btn-group {
+    margin: 0 0 0 14px;
+    width: 100px;
+    _margin: 0;
+}
+.m-hd-wrap .m-hd,
+.m-nav-wrap .m-nav-bd,
+.m-footer-link-list,
+.m-seo-list{
+    width:950px;
+}
+
+.house-base-info .house-info-first .map-btn,.icon-list .more-btn,
+.house-total-info .house-comments-info .house-value,
+.hotel-info .hotel-name,.hotel-info .map-btn,.hotel-info-box .hotle-name,
+.hotel-info a,.hotel-info-wrap .custom-service,.house-address-info .map-btn,
+.hotel-info .commenting-results,.hotel-info .total-comments,.m-icon-list .more-btn{
+    color:#2e7dcd;
+}
+
+.house-base-info,.house-wrap,.column-title{
+    border:1px solid #ddd;
+
+}
+
+.column-title{
+    height:38px;
+    margin-top:30px;
+
+    background-color: #f8f8f8;
+    background-image: -ms-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: -moz-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: -o-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FFFFFF),color-stop(1,#f8f8f8));
+    background-image: -webkit-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: linear-gradient(to bottom,#FFFFFF 0%,#f8f8f8 100%);
+    text-align:left;
+
+}
+.column-title span{
+    display:inline-block;
+    margin-left:19px;
+    font-weight:normal;
+    font:normal 16px/38px "微软雅黑";
+    color:#f60;
+}
+.column-title  .comment-tips{
+    float:right;
+    margin-right:16px;
+    line-height:38px;
+    display:inline;
+}
+.column-title .comment-tips strong {
+    font-weight: bold;
+    color: #f60;
+    margin: 0 8px;
+}
+.house-wrap{
+    margin-top:-1px;
+    background-color:#fff;
+}
+
+
+/* 房屋标题 &&  分享、收藏、赞  */
+
+
+.house-group{
+    padding:10px 0;
+    overflow:hidden;
+}
+.house-group .title-cont{
+    float:left;
+}
+.house-group .house-title{
+    font-size:24px;
+    color:#333;
+}
+.house-group .title-cont .icon-tujia {
+    display: inline-block;
+    width: 27px;
+    height: 18px;
+    margin-left: 2px;
+    background: url(../Images/i-list.png) no-repeat 0 0;
+    overflow: hidden;
+    vertical-align: 0;
+}
+
+
+
+.house-group .menu-cont{
+    float:right;
+    text-align:right;
+}
+.house-group .menu-cont .item-box{
+    display:inline-block;
+    min-width:74px;
+    margin-top:14px;
+    text-align:left;
+}
+.house-group .menu-cont .icon-praise,
+.house-group .menu-cont .icon-chevron,
+.house-group .menu-cont .icon-share{
+    display:inline-block;
+    width:15px;
+    height:14px;
+    margin:0 5px 0 20px;
+    background:url(../Images/icon-orange.png) no-repeat 0 0;
+    overflow:hidden;
+    vertical-align:-2px;
+}
+
+.house-group .menu-cont .link-btn .icon-praise{
+    background-position:0 0;
+}
+.house-group .menu-cont .link-btn .icon-chevron{
+    background-position:-15px 0;
+}
+.house-group .menu-cont .link-btn .icon-share{
+    background-position:-30px 0;
+}
+.house-group .menu-cont .active {
+    cursor : default;
+}
+.house-group .menu-cont .active .icon-praise,
+.house-group .menu-cont .link-btn:hover .icon-praise{
+    background-position:0 -15px;
+}
+.house-group .menu-cont .active  .icon-chevron,
+.house-group .menu-cont .link-btn:hover .icon-chevron{
+    background-position:-15px -15px;
+}
+.house-group .menu-cont .active  .icon-share,
+.house-group .menu-cont .link-btn:hover .icon-share{
+    background-position:-30px -15px;
+}
+
+.events-name{
+    margin-left:10px;
+    font-weight:bold;
+    font-size:12px;
+    color:#f60;
+    text-decoration:underline;
+}
+
+
+
+.house-tabs-box,.house-tabs{
+    width:950px;
+    height:40px;
+}
+.house-tabs-box{
+    margin-top:30px;
+    overflow:hidden;
+}
+.house-tabs-box .house-tabs ul{
+    width:948px;
+    height:38px;
+
+    background-color: #f8f8f8;
+    background-image: -ms-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: -moz-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: -o-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FFFFFF),color-stop(1,#f8f8f8));
+    background-image: -webkit-linear-gradient(top,#FFFFFF 0%,#f8f8f8 100%);
+    background-image: linear-gradient(to bottom,#FFFFFF 0%,#f8f8f8 100%);
+
+    border:1px solid #ddd;
+
+}
+.house-tabs-box .house-tabs li{
+    float:left;
+    height:35px;
+    padding-top:3px;
+    border-right:1px solid #ddd;
+    text-align:center;
+    font:normal 16px/35px "微软雅黑";
+}
+.house-tabs-box .house-tabs a{
+    display:inline-block;
+    padding:0 20px;
+    color:#666;
+}
+.house-tabs-box .house-tabs .current{
+    height:38px;
+    margin-top:-1px;
+    padding-top:0;
+    border-top:3px solid #f60;
+    background:#fff;
+    position:relative;
+    z-index:1;
+    font:normal 16px/36px "微软雅黑";
+}
+.house-tabs-box .house-tabs .current a{
+    color:#f60;
+    text-decoration:none;
+    cursor:default;
+}
+
+.layoutfix{
+    position: fixed;
+    top: 0px;
+    left:50%;
+    margin-left:-475px;
+    z-index: 99;
+}
+.layoutfix ul{
+    width:948px;
+}
+
+* html,* html body{
+    background-image:url(about:blank);
+    background-attachment:fixed;
+}
+* html .layoutfix{
+    position:absolute;
+    top:expression(eval(document.documentElement.scrollTop));
+}
+
+.house-tabs-box .house-tabs .total-box{
+    color:#f60;
+}
+
+.house-tabs-box .house-tabs .house-tabs-last{
+    float:right;
+    width:200px;
+    margin:-4px 6px 0 0;
+    padding:0;
+    display:inline;
+    border:none;
+    text-align:right;
+}
+.house-tabs-box .house-tabs .house-tabs-last a:hover{
+    text-decoration:none;
+}
+.house-tabs-box .house-tabs-last .book-btn{
+    display:inline-block;
+    width:84px;
+    height:28px;
+    margin-top:-4px;
+    padding:0 0 0 10px;
+    font:normal 14px/28px "微软雅黑";
+    background:#f60 url(../Images/detail/arrow-top-icon.png) no-repeat 74px center;
+    color:#fff;
+    text-align:left;
+    border-radius:3px;
+}
+.house-tabs-box .house-tabs-last .book-btn:hover{
+    background:#f90 url(../Images/detail/arrow-top-icon.png) no-repeat 74px center;
+    text-decoration:underline;
+}
+.house-tabs-box .house-tabs-last .price-box{
+    margin-right:10px;
+    color:#f30;
+}
+.house-tabs-box .house-tabs-last .price-box .price-value{
+    font-family:Tahoma;
+    font-size:24px;
+    background:url(../Images/detail/price-bj.png) repeat-x 0 26px;
+}
+
+.house-tabs-box .house-tabs-last .f-vt{
+    font-family: Arial;
+    vertical-align: 8px;
+    -webkit-text-size-adjust: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+.house-tabs-box .house-tabs-last  .f-vb{
+    font-size:12px;
+    vertical-align:2px;
+
+}
+.house-pic-wrap{
+    float:left;
+    width:670px;
+    margin:-1px 0 0 -1px;
+    border:1px solid #ddd;
+    border-bottom:none;
+}
+
+/* house-sidebar */
+.house-wrap .sidebar-wrap{
+    float:right;
+    width:276px;
+    color:#333;
+}
+.house-wrap .sidebar-cont .area-info,
+.house-wrap .sidebar-cont .room-info,
+.house-wrap .sidebar-cont .comment-info,
+.house-wrap .sidebar-wrap .apply-info{
+    margin:0 18px;
+    border-top:1px dashed #ccc;
+}
+
+
+.house-wrap .sidebar-wrap .sidebar-cont{
+    height:454px;
+}
+.house-wrap .sidebar-wrap .pay-info{
+    height:55px;
+    margin:0 18px;
+    padding-top:28px;
+    text-align:left;
+}
+.house-wrap .sidebar-wrap .pay-info .item-box{
+    margin-top:10px;
+}
+
+.house-wrap .sidebar-wrap .pay-info .money-cont a,
+.house-wrap .sidebar-wrap .pay-info .money-cont{
+    font-size: 30px;
+    color: #f30;
+    font-family: Tahoma;
+    cursor: text;
+}
+.house-wrap .sidebar-wrap .pay-info .money-cont{
+    line-height:22px;
+    height:22px;
+}
+.house-wrap .sidebar-wrap .pay-info .money-cont:hover{
+    text-decoration:none;
+}
+.house-wrap .sidebar-wrap .pay-info .money-cont a:hover{
+    text-decoration:none;
+}
+
+.house-wrap .sidebar-wrap .pay-info .money-cont  dfn{
+    font: normal 12px arial;
+    vertical-align: 12px;
+}
+
+.house-wrap .sidebar-wrap .pay-info .pay-card{
+    margin-left:10px;
+}
+
+.house-wrap .sidebar-wrap .pay-info .icon-card {
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    margin-right:4px;
+    background: url(../Images/icon-card.png) no-repeat 0 0;
+    vertical-align: -4px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .house-wrap .sidebar-cont .exp-voucher dfn{
+        vertical-align: 0;
+    }
+}
+.house-wrap .sidebar-wrap .pay-info .exp-voucher b{
+    font-weight:bold;
+    font-family:Tahoma;
+}
+.house-wrap .sidebar-wrap .apply-info{
+    padding:15px 0 5px;
+    overflow:hidden;
+    margin-right:0px;
+}
+.house-wrap .sidebar-wrap .apply-info ul li{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+.house-wrap .sidebar-wrap .apply-info ul li b{
+    font-weight: bold;
+}
+.house-wrap .sidebar-wrap .apply-info .red{
+    color: #ff3300;
+}
+.house-wrap .sidebar-wrap .apply-info .blue{
+    color: #3b83cb;
+}
+.house-wrap .sidebar-wrap .apply-info .ui_question {
+    font-style: normal;
+    font-family: "arial";
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    background-color: #3b83cb;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0px 10px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.house-wrap .sidebar-wrap .apply-info .apply-btn{
+    margin-top: 25px;
+    display: inline-block;
+    width: 150px;
+    height: 42px;
+    text-align: center;
+    font: 18px/42px "微软雅黑";
+    background-color: #F60;
+    color: #FFF;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.house-wrap .sidebar-wrap .apply-info .apply-btn:hover {
+    background-color: #F90;
+    text-decoration: none;
+}
+.house-wrap .sidebar-wrap .apply-info .apply-btn.off{
+    background-color: #999999;
+}
+.house-wrap .sidebar-wrap .apply-info .apply-btn.off:hover{
+    background-color: #999;
+}
+.house-wrap .sidebar-wrap .apply-info .apply-total{
+    font-size: 18px;
+    color: #999999;
+    line-height: 1em;
+    margin-top: 20px;
+}
+.house-wrap .sidebar-wrap .apply-info .apply-total b{
+    font-weight: bold;
+}
+.house-wrap .sidebar-wrap .apply-list{
+    padding: 20px 24px 0;
+}
+.house-wrap .sidebar-wrap .apply-list .item{
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+}
+.house-wrap .sidebar-wrap .apply-list .item img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.house-wrap .sidebar-wrap .apply-list .item h5{
+    font-size: 12px;
+    line-height: 22px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*
+.house-wrap .sidebar-wrap .room-info{
+    padding:5px 0  24px;
+    overflow:hidden;
+}
+.house-wrap .sidebar-wrap .room-info li{
+    float:left;
+    width:80px;
+    height:54px;
+    margin-top:20px;
+    text-align:center;
+}
+.house-wrap .sidebar-wrap .room-info li [class^="icon"]{
+    display:inline-block;
+    width:37px;
+    height:34px;
+    background:url(../Images/room-icon-list.png) no-repeat;
+    overflow:hidden;
+}
+.house-wrap .sidebar-wrap .room-info li .icon-room{
+    background-position:0 3px;
+}
+.house-wrap .sidebar-wrap .room-info li .icon-type{
+    background-position:-37px 0;
+}
+.house-wrap .sidebar-wrap .room-info li .icon-user{
+    background-position:-74px 3px;
+}
+.house-wrap .sidebar-wrap .room-info li .icon-bed{
+    background-position:0 -34px;
+}
+.house-wrap .sidebar-wrap .room-info li .icon-square{
+    background-position:-37px -34px;
+}
+.house-wrap .sidebar-wrap .room-info li .icon-wiff{
+    background-position:-74px -34px;
+}
+.house-wrap .sidebar-wrap .room-info li .icon-network{
+    background-position:-110px -34px;
+}
+.house-wrap .sidebar-wrap .room-info .lab-text{
+    display:block;
+    line-height:18px;
+}
+
+.house-wrap .sidebar-cont .area-info{
+    padding:20px 0;
+    text-align:center;
+}
+.house-wrap .sidebar-cont .area-info .lab-text{
+    display:inline-block;
+    margin:0 4px;
+}
+
+.house-wrap .sidebar-cont .comment-info{
+    padding:26px 0 28px;
+    text-align:center;
+}
+.house-wrap .sidebar-cont .comment-info .star-box{
+    display:inline-block;
+    width:90px;
+    height:15px;
+    background:url(../Images/star.png) no-repeat 0 0;
+    vertical-align:-2px;
+    text-align:left;
+}
+.house-wrap .sidebar-cont .comment-info .scores-info{
+    display:inline-block;
+    width:90px;
+    height:15px;
+    background:url(../Images/star.png) no-repeat 0 -15px;
+}
+.house-wrap .sidebar-cont .comment-info .comments-area{
+    color:#3b83cb;
+}
+.house-wrap .sidebar-cont .comment-info .hotel-value,
+.house-wrap .sidebar-cont .comment-info .comments-count{
+    font-weight:bold;
+    font-family:Tahoma;
+}
+.house-wrap .sidebar-cont .comment-info .hotel-value{
+    padding:0 10px;
+}
+
+.house-wrap .sidebar-cont .comment-info .icon-time{
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    margin: 0 6px;
+    background: url(../Images/icon-time.png) no-repeat;
+    vertical-align: -3px;
+}
+
+.house-wrap .sidebar-wrap .btn-info{
+    height:54px;
+    padding-top:10px;
+    text-align:center;
+    background:url(../Images/map.jpg) no-repeat left top;
+}
+.house-wrap .sidebar-wrap .btn-info .icon-area{
+    display:inline-block;
+    width:30px;
+    height:40px;
+    margin:0 10px;
+    background:url(../Images/icon-area.png) no-repeat;
+    vertical-align:-16px;
+}
+.house-wrap .sidebar-wrap .btn-info .link-map{
+    font-weight:bold;
+    text-decoration:underline;
+}
+.house-wrap .sidebar-wrap .btn-info .link-map:hover{
+    color: #3b83cb;
+}
+*/
+
+/*  */
+.experience-wrap{
+    width: 463px;
+    height: 300px;
+    border: 1px solid #dddddd;
+    border-bottom: 4px solid #dddddd;
+    margin-top: 30px;
+    float: left;
+    background-color: #fff;
+    overflow: hidden;
+}
+.experience-wrap.right{
+    float: right;
+}
+.experience-wrap .experience-title{
+    background: url(../Images/experience-titleBg.png) left top no-repeat;
+    width: 117px;
+    height: 43px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 25px;
+    margin: 9px 0;
+    margin-left: -6px;
+}
+.experience-wrap .experience-info{
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+}
+/* 体验房价格 */
+
+.house-wrap .sidebar-wrap .price-wrap{
+    text-align:center;
+    color:#999;
+}
+.house-wrap .sidebar-wrap .price-wrap .link-btn{
+    display:inline-block;
+    margin-top:10px;
+}
+.house-wrap .sidebar-wrap .price-wrap .link-btn .icon-box{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin:0 4px;
+    background:url(../Images/detail/icon_i.png) no-repeat;
+    vertical-align:-2px;
+    *display:inline;
+    *zoom:1;
+}
+.house-wrap .sidebar-wrap .price-wrap span{
+    display:inline-block;
+    margin:0 10px;
+}
+.house-wrap .sidebar-wrap .price-wrap .voucher-info dfn,
+.house-wrap .sidebar-wrap .price-wrap .voucher-info .price-box{
+    color:#f30;
+}
+.house-wrap .sidebar-wrap .price-wrap dfn{
+    font: normal 10px arial;
+    vertical-align: 2px;
+}
+.house-wrap .sidebar-wrap .price-wrap .voucher-info dfn{
+    vertical-align:8px;
+}
+
+.house-wrap .sidebar-wrap .price-box{
+    font-size: 24px;
+    font-family: Tahoma;
+}
+.house-wrap .sidebar-wrap .serv-fees{
+    font-size: 16px;
+    font-family: Tahoma;
+}
+
+
+
+
+
+
+.special-icon,.air-icon,.bus-icon,.ticket-available,.cooking-icon,.help-icon{
+    margin-left:4px;
+    display:inline-block;
+    vertical-align:-3px;
+    background:url(../Images/product-icon.png) no-repeat;
+    overflow:hidden;
+}
+.special-icon{
+    display: inline-block;
+    width: 38px;
+    height: 18px;
+    margin-left: 2px;
+    vertical-align:-4px;
+    background: url(../Images/i-list.png) no-repeat -100px 0;
+    overflow: hidden;
+}
+.air-icon{
+    width:12px;
+    height:16px;
+    background-position:-41px 0;
+}
+.bus-icon{
+    width:10px;
+    height:16px;
+    background-position:-63px 0;
+}
+.ticket-available{
+    width:10px;
+    height:16px;
+    background-position:-83px 0;
+}
+.cooking-icon{
+    width:12px;
+    height:16px;
+    background-position:-102px 0;
+}
+.help-icon{
+    width:14px;
+    height:14px;
+    background-position:-156px 0;
+}
+
+
+.no-products{
+    line-height:30px;
+    height:30px;
+    padding:10px 0 10px 60px;
+    background:#fffbf6 url(../Images/icon-failure_24x24.png) no-repeat 30px center;
+}
+.room-select-box table .activation{
+    background:#fffcdb;
+}
+
+/* 房屋介绍 */
+.column-info{
+    line-height:26px;
+    margin:0 20px;
+    font-size:14px;
+    overflow:hidden;
+}
+
+.info-cont{
+    margin-top:-1px;
+    padding: 10px 0;
+    border-top:1px solid #ddd;
+}
+.info-cont h2{
+    float:left;
+    width:60px;
+    font-weight:bold;
+}
+.info-cont .text-box{
+    margin-left:60px;
+}
+.info-cont .text-box .item-box{
+    display:inline-block;
+    width: 90px;
+    white-space: nowrap;
+    font-size:14px;
+}
+
+.info-cont .text-box .item-box-wide{
+    display:inline-block;
+    width: 278px;
+    white-space: nowrap;
+    font-size:14px;
+}
+
+.steelblue {
+    color: #3b83cb;
+}
+
+.info-cont .text-box .col-3{
+    width:276px;
+}
+
+.info-cont .text-box .has,
+.info-cont .text-box .not{
+    width: 70px;
+    padding-left: 20px;
+    background:url(../Images/icon-freeHouse.png) no-repeat;
+}
+.info-cont .text-box .has{
+    background-position:0 5px;
+}
+.info-cont .text-box .not{
+    background-position:0 -24px;
+}
+
+
+
+
+
+.info-cont .text-box h3{
+    font-size:14px;
+    font-weight:bold;
+}
+.info-cont .text-box .link-btn{
+    color: #2e7dcd;
+}
+.info-cont .text-box .house-tag{
+    margin:10px 0;
+    padding-bottom:10px;
+    border-bottom: 1px dashed #ddd;
+}
+.info-cont .text-box .item-group{
+    padding:10px 0;
+    border-top: 1px dashed #ddd;
+}
+
+
+.info-cont .house-tag ul{
+    overflow:hidden;
+}
+.info-cont .house-tag li{
+    float:left;
+    width:90px;
+    padding-right:4px;
+}
+
+.info-cont .house-tag .tag-box{
+    display: inline-block;
+    line-height: 16px;
+    max-width: 130px;
+    height: 16px;
+    padding: 1px 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 15px;
+    font-size:12px;
+    background-color:#f8f8f8;
+}
+
+
+
+.periphery-info .house-text,
+.district-info .house-text{
+    padding:20px 0;
+}
+.info-cont .text-box p,
+.district-info .house-text p,
+.periphery-info .house-text  p{
+    display:block;
+    height:10px;
+    overflow:hidden;
+}
+.info-cont .text-box .explain-info{
+    padding: 10px 0;
+    border-top: 1px dashed #ddd;
+}
+
+
+/* 小区图片 */
+.community-pic {
+    margin-top: -1px;
+    padding: 10px 0;
+    border-top: 1px dashed #ddd;
+}
+.community-pic h2{
+    float:left;
+    width:60px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align:left;
+}
+.community-pic .pic-list{
+    margin-left:60px;
+}
+.community-pic .pic-list  ul{
+    overflow:hidden;
+    margin:6px 0 0 -10px;
+}
+.community-pic .pic-list  li{
+    float:left;
+    width:70px;
+    height:43px;
+    margin:3px;
+    margin :0 0 0 10px;
+    display:inline;
+}
+.community-pic .pic-list  li,
+.community-pic .pic-list img,
+.community-pic .pic-list li a{
+    display:block;
+    width:70px;
+    height:43px;
+    background:#ccc;
+}
+.community-pic  p{
+    margin-top:4px;
+}
+.community-pic  p a span{
+    color:#f00;
+}
+.district-map,.periphery-map{
+    margin:20px 20px 0;
+}
+
+
+/* 房屋地图 & 周边信息 */
+.map-wrap {
+    float: left;
+    width: 670px;
+    background: #fff;
+    display: inline;
+    position:relative;
+}
+
+.map-wrap  #mapPanel{
+    width: 670px;
+    height: 540px;
+    overflow: hidden;
+    background:#ccc;
+}
+#mapPanel input{
+    border:1px solid #ccc;
+    margin: 4px;
+}
+
+.map-legend{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:670px;
+    height:40px;
+    padding-top:10px;
+    overflow:hidden;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(255,255,255,0.9);
+}
+:root .map-legend{
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#E5FFFFFF', endColorstr='#E5FFFFFF');
+}
+
+
+.map-legend .mapitem{
+    float: left;
+    margin-right: 20px;
+}
+.map-legend .mapitem .icon{
+    float: left;
+    width: 23px;
+    height: 25px;
+    margin: 4px 0 0 7px;
+    background: url(../Images/markers_sj.png) no-repeat;
+}
+.map-legend .mapitem #icon0 {
+    background-position: 0px 0px;}
+.map-legend .mapitem #icon1 {
+    background-position: 0px -25px;
+}
+.map-legend .mapitem #icon2 {
+    background-position: 0px -50px;
+}
+.map-legend .mapitem #icon3 {
+    background-position: 0px -75px;
+}
+.map-legend .mapitem #icon4 {
+    background-position: 0px -100px;
+}
+
+
+.map-legend .mapitem .text {
+    float: left;
+    margin:0 5px;
+    line-height:36px;
+}
+
+
+/* 地图侧栏 */
+.peripheral-info{
+    margin:14px 20px 0  0;
+}
+.peripheral-info h3{
+    font-size:14px;
+    font-weight:bold;
+    color:#f60;
+}
+.peripheral-info .tab-menu{
+    line-height:24px;
+    height:24px;
+    margin-top:20px;
+    background:url(../Images/detail/map-tab-menu-bj.png) no-repeat;
+    overflow:hidden;
+}
+.peripheral-info  .tab-menu li{
+    float:left;
+    width:66px;
+    text-align:center;
+    position:relative;
+    padding: 0
+}
+.peripheral-info  .tab-menu li a{
+    padding: 0;
+    line-height: 24px;
+    font-size: 12px;
+}
+.peripheral-info .tab-menu .current{
+    background:#fff;
+    border:1px solid #ddd;
+    border-bottom:1px solid #fff;
+}
+.peripheral-info  .tab-menu .current a{
+    cursor:default;
+}
+.peripheral-info  .tab-menu a:before{
+    width:1px;
+    height:14px;
+    position:absolute;
+    right:0;
+    top:5px;
+    content: '.';
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    background:#ddd;
+}
+.peripheral-info  .tab-menu .current a:before,.peripheral-info .tab-menu .last a:before{
+    display:none;
+}
+.tab-info-item{
+    _width:210px;
+    margin-top:10px;
+    background:url(../Images/detail/map-tab-item-bj.png) no-repeat 0 2px;
+    overflow:hidden;
+
+}
+.tab-info-item li{
+    line-height:36px;
+    height:36px;
+    padding-left:40px;
+    margin-top:-1px;
+    border-top:1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:180px;
+
+}
+.tab-info-item a{
+    color:#333;
+}
+
+
+
+
+
+
+/* 酒店管理公司 tips  */
+.m-hotel-tips{
+    width:230px;
+    font-size:12px;
+    color:#666;
+}
+.m-hotel-tips .dl-wrap{
+    line-height:22px;
+}
+.m-hotel-tips .dl-wrap dt{
+    margin-bottom:4px;
+    padding-bottom:6px;
+    border-bottom:1px dashed #ddd;
+    font-weight:bold;
+}
+.m-hotel-tips .dl-wrap .span-title{
+    display:block;
+    float:left;
+    width:74px;
+    text-align:left;
+}
+.m-hotel-tips .dl-wrap p{
+    margin-left:74px;
+}
+.m-hotel-tips a,
+.m-hotel-tips .hotel-value{
+    color:#69c;
+}
+
+.m-hotel-tips .hotel-judgement{
+    margin-left:10px;
+}
+
+
+
+
+/* loading */
+.loading-wrap{
+    padding:20px 0;
+    text-align:center;
+}
+.loading-wrap .icon-loading{
+    display:inline-block;
+    width:100px;
+    height:10px;
+    margin:0 10px;
+    background:url(../Images/detail/loading2.gif) no-repeat;
+    vertical-align:-1px;
+}
+.room-select-box .loading-wrap{
+    background:#fff;
+}
+
+/*  单页面 */
+.house-other-info{
+    clear:both;
+    margin-top:10px;
+}
+.house-other-info a{
+    color:#69c;
+    margin:0 5px;
+}
+
+
+.msg{
+    margin: 10px  0;
+    padding: 5px 10px;
+    background: #FFFBF6;
+    border: 1px solid #F5DCBC;
+}
+
+
+
+
+
+
+
+/*申请人名单*/
+.column-info .m-comments-box{
+    margin-top: -1px;
+}
+.m-comments-box{
+    padding:30px 0 30px 60px;
+    position: relative;
+}
+.m-comments-box:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.m-comments-box img{
+    position: absolute;
+    left: 0;
+    top:30px;
+    border-radius: 50%;
+}
+.m-comments-box a{
+    cursor: text;
+    text-decoration: none;
+}
+
+.m-comments-box .contrl{
+    overflow: hidden;
+}
+
+.m-reply-box .m-comments-box{
+    border-top: 1px solid #e7e7e7;
+}
+.m-reply-box .username{
+    color: #69c;
+}
+.m-comments-box blockquote{
+    margin:5px 0;
+    padding-left: 20px;
+    color:#999;
+    border-left: 4px solid #999;
+}
+.m-reply-box .text{
+    line-height: 26px;
+    color: #666;
+}
+.m-reply-box .contrl{
+    text-align: right;
+    margin-top: 5px;
+    color:#999;
+}
+.m-reply-box .contrl .date{
+    float: left;
+}
+.m-reply-box .contrl .btn-report{
+    color:#999;
+}
+.m-reply-box .contrl .btn-reply{
+    margin-left: 10px;
+    color: #69c;
+}
+
+.more-comments{
+    display: block;
+    line-height: 38px;
+    text-align: center;
+    color:#999;
+    background-color: #fafbfb;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+}
+.more-comments:hover{
+    background-color: #e7e7e7;
+}
+
+.winners-list{
+    padding: 20px 0;
+}
+.winners-list .item{
+    width: 9.5%;
+    text-align: center;
+    display: inline-block;
+}
+.winners-list .item img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.winners-list .item a {
+    cursor: text;
+    text-decoration: none;
+}
+.winners-list .item h5{
+    font-size: 12px;
+    line-height: 22px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*那天有房日历*/
+
+
+.m-calendar {
+    width: 718px;
+    height: 366px;
+    border: 1px solid #b3b3b3;
+    position: relative;
+    background: #fff;
+    z-index: 999;
+}
+
+.calendar-head {
+    height: 44px;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+
+.calendar-head h2 {
+    font: normal 16px/44px Tahoma;
+    text-align: center;
+    color: #333;
+}
+
+.calendar-btn i {
+    position: absolute;
+    top: 186px;
+    width: 28px;
+    height: 28px;
+    background: url(../Images/calendar-btn.png) no-repeat;
+    cursor: pointer;
+}
+
+.calendar-btn .cal-prev-btn {
+    left: 14px;
+    background-position: -63px 0;
+}
+
+.calendar-btn .cal-next-btn {
+    right: 14px;
+    background-position: -94px 0;
+}
+
+.calendar-btn .prev-btn-dis, .calendar-btn .next-btn-dis {
+    cursor: default;
+}
+
+.calendar-btn .prev-btn-dis {
+    background-position: 0 0;
+}
+
+.calendar-btn .next-btn-dis {
+    background-position: -31px 0;
+}
+
+.calendar-btn .cal-close-btn,#bookCal .cal-close-btn {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url(../Images/cal-close-btn.png) no-repeat;
+    z-index: 100;
+}
+.has-house-status {
+    color: #008d00;
+}
+.checkIn {
+    color:#FF6600
+}
+
+
+
+.calendar-body {
+    width: 618px;
+    margin: 0 auto;
+}
+
+.cal-table-list {
+    width: 100%;
+    height: 264px;
+    overflow: hidden;
+}
+
+.calendar-body .cal-content {
+    float: left;
+    width: 618px;
+    height: 264px;
+    overflow: hidden;
+}
+
+
+.calendar-body table {
+    width: 100%;
+    font-family: Tahoma;
+}
+
+.calendar-body table th {
+    width: 46px;
+    height: 28px;
+    line-height: 28px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+    text-align: center;
+}
+
+.calendar-body table td {
+    width: 87px;
+    height: 38px;
+    line-height: 1.3;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    -webkit-text-size-adjust: none;
+    vertical-align: top;
+    background: #d7f6c5;
+    vertical-align: top;
+}
+
+.calendar-body table td p {
+    padding: 4px 6px 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+.calendar-body table .price-box {
+    float: left;
+    font-size: 10px;
+    color: #008d00;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.calendar-body table td .room-text {
+    padding: 0 6px;
+    text-align: left;
+    color: #333;
+    font-size: 12px;
+}
+
+.calendar-body table .default-date {
+    background: #fff;
+    cursor: pointer;
+}
+
+.calendar-body table .past-date {
+    background: #eaeaea;
+}
+
+.calendar-body table .dis-room {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    background: #eaeaea;
+}
+
+.calendar-body table .activation {
+    background: #f90;
+}
+
+.calendar-body table .activation .price-box, .calendar-body table .activation .date-box,
+.calendar-body table .activation .room-text {
+    color: #fff;
+}
+
+
+.calendar-body table .date-box {
+    padding: 4px 4px 0 0;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+    font-family: Tahoma;
+}
+
+
+
+.calendar-body table .picer-box, .calendar-body table .room-text {
+    padding-right: 4px;
+    text-align: right;
+}
+
+
+
+.m-calendar .checkinBtn, .m-calendar .checkoutBtn {
+    display: block;
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.m-calendar .checkinBtn {
+    width: 50%;
+    background-color: #f90;
+}
+
+.m-calendar .checkoutBtn {
+    width: 50%;
+    background-color: #c60;
+}
+
+.m-calendar .default-date .checkoutBtn {
+    width: 87px;
+}
+
+.m-calendar .actionBtns {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    font-size:14px;
+}
+
+.m-calendar td.available-date {
+    cursor: pointer;
+}
+
+.m-calendar td.selectedCheckin, .m-calendar td.selectedCheckin .price-box, .m-calendar td.selectedCheckin .date-box, .m-calendar td.selectedCheckin .room-text,
+.m-calendar td.durationDate, .m-calendar td.durationDate .price-box, .m-calendar td.durationDate .date-box, .m-calendar td.durationDate .room-text {
+    background-color: #f90;
+    color: white;
+}
+
+.m-calendar td.selectedCheckout, .m-calendar td.selectedCheckout .price-box, .m-calendar td.selectedCheckout .date-box, .m-calendar td.selectedCheckout .room-text {
+    background-color: #c60;
+    color: white;
+}
+
+
+.calendar-tips {
+    width: 618px;
+    margin: 10px auto 0;
+    color: #f60;
+}
+.calendar-tips .icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    background: url(../Images/calendar-icon.png) no-repeat;
+    vertical-align: -3px;
+}
+
+
+.calendar-small-tips{
+    width: 70px;
+    line-height:30px;
+    padding:0 5px;
+    background-color:#f60;
+    color:#fff;
+    font-family:Tahoma;
+    white-space: nowrap;
+    text-align:center;
+    z-index:9999;
+}
+.calendar-small-tips:after {
+    position: absolute;
+    left: 50%;
+    top: 34px;
+    content: '';
+    width: 8px;
+    height:5px;
+    margin-top:-4px;
+    background:url(../Images/calendar-tips.png) no-repeat left center;
+}
+
+.no-house {
+    text-decoration:line-through;
+}
+
+.m-link-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.freeHouse-list .item a { cursor: default;
+    text-decoration: none; }

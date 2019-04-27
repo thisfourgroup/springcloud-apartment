@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入jequery -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- 引入bootstrap的css、js文件 -->
+    <script type="text/javascript" src="/js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.css">
+    <!-- 引入date日期的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!-- 引入文件上传的css、js -->
+    <script src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">
+</head>
+<body>
+<div class="container-fluid">
+    <form class="form-horizontal" id="userForm" method="post">
+
+        <!--隐藏id-->
+        <input type="hidden" name="forumid" id="forumid">
+
+
+
+<!--
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumcollect">收藏:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="forumcollect" id="forumcollect" placeholder="请输入收藏...">
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumlike">点赞:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="forumlike" id="forumlike" placeholder="请输入点赞...">
+            </div>
+        </div>-->
+
+        <div class="row">
+            <!--<div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumcommentid">评论id:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="forumcommentid" id="forumcommentid" placeholder="请输入评论id...">
+            </div>-->
+
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="url">地址:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="url" id="url" placeholder="请输入地址...">
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumname">论坛名:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="forumname" id="forumname" placeholder="请输入论坛名...">
+            </div>
+        </div>
+
+        <div class="row">
+           <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumuser">论坛人:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="forumuser" id="forumuser" placeholder="请输入论坛人...">
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumlabelid">标签:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select id="forumlabelid" name="forumlabelid" class="form-control" >
+                 </select>
+            </div>
+        </div>
+
+        <!--<div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumbrowse">浏览:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control " name="forumbrowse" id="forumbrowse" placeholder="请输入浏览...">
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumupdate">上传时间:</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control date" name="forumupdate" id="forumupdate" placeholder="请输入上传时间...">
+            </div>
+        </div>-->
+
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="forumimg">图片:</label>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <input type="hidden" id="headImg" name="forumimg" />
+                <input type="file" multiple class="projectfile" accept="image/*" name="img" id="forumimg">
+            </div>
+
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="foruminfo">简介内容:</label>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" name="foruminfo" id="foruminfo" placeholder="请输入简介内容...">
+        </div>
+    </form>
+</div>
+
+</body>
+<script>
+
+    //类型回显
+    $(function(){
+        initTypeSelect();
+    })
+    function initTypeSelect(){
+        $.ajax({
+            url:'/queryForumlable',
+            type:'post',
+            data:{},
+            dataType:'json',
+            success:function(data){
+                var html = '<option value="-1">请选择</option>';
+                for (var i = 0; i < data.length; i++) {
+                    html += '<option value="'+data[i].id+'">'+data[i].forumlabel+'</option>'
+                }
+                $("#forumlabelid").html(html);
+            }
+        })
+    }
+
+
+    //时间
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        //format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        format: 'yyyy-mm-dd ',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });
+    //图片
+    $('#forumimg').fileinput({
+        language: 'zh', //设置语言
+        uploadUrl: '/upload', //上传的地址
+        allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+        showUpload: true, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-primary", //按钮样式
+        //dropZoneEnabled: false,//是否显示拖拽区域
+        //minImageWidth: 50, //图片的最小宽度
+        //minImageHeight: 50,//图片的最小高度
+        //maxImageWidth: 1000,//图片的最大宽度
+        //maxImageHeight: 1000,//图片的最大高度
+        //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+        //minFileCount: 0,
+        maxFileCount: 1, //表示允许同时上传的最大文件个数
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        //是否初始化图片显示
+        initialPreviewAsData: true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+    }).on('fileuploaded', function(event, data, previewId, index) {
+        var imgval = $('#headImg').val();
+        if(imgval == null || imgval == "" || imgval == undefined){
+            imgval = data.response;
+        }/*else{
+				imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+			}*/
+        $('#headImg').val(imgval);
+    });
+
+</script>
+</html>

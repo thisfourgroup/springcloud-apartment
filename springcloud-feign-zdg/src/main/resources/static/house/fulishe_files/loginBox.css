@@ -1,0 +1,235 @@
+﻿/*  用户登录 弹窗  */
+.m-login-wrap{
+	width:400px;
+	background:#fff;
+	display:none;
+}
+.m-login-wrap .login-head{
+	height:59px;
+	border-bottom:1px solid #ddd; 
+	background:#f8f8f8;
+	position:relative;
+}
+
+.m-login-wrap .login-head h2{	
+	float:left;
+	padding-left:22px;
+	color:#f60;
+	font:normal 18px/59px "微软雅黑";
+}
+.m-login-wrap .login-head .close-btn{
+	float:right;
+	width:30px;
+	height:30px;
+	background:#ddd;
+	cursor:pointer;
+	background: url(../Images/p-close-btn.png) no-repeat;
+}
+.m-login-wrap .login-head .arrow-bottom{
+	position: absolute;
+	left: 50px;
+	bottom: -6px;
+	width: 10px;
+	height: 6px;
+	background: url(../Images/l-arrow-bottom.png) no-repeat;
+	_bottom: -12px;
+}
+
+.m-login-wrap .login-body{
+	padding:10px 0;
+}
+.m-login-wrap .control-group{
+	width:300px;
+	margin:20px auto 0;
+}
+.m-login-wrap .control-group .controls{
+	position:relative;
+}
+
+
+.m-login-wrap .control-group .ipt-text{
+	width:278px;
+	line-height:18px;
+	padding:8px 10px;
+	border:1px solid #ddd;
+	font-size:14px;
+}
+.m-login-wrap .control-group .text-watermark{
+	width:228px;
+	height:18px;
+	line-height:18px;
+	padding:8px 10px;
+	font-size:14px;
+	color:#999;
+	
+	position:absolute;
+	left:0;
+	top:0;
+}
+.m-login-wrap .control-group .verify-ipt {
+	width:96px;
+}
+.m-login-wrap .control-group .verify-img{
+	vertical-align:-12px;
+	width:80px;
+}
+.m-login-wrap .control-group .change-rand{
+	color:#69c;
+}
+.m-login-wrap .t-control-group{
+	line-height:24px;
+	height:24px;
+	margin:12px auto;
+	text-align:right;
+	overflow:hidden;
+}
+.m-login-wrap .t-control-group label{
+	display:block;
+	float:left;
+	height:24px;
+	line-height:24px;
+	color:#333;
+}
+.m-login-wrap .t-control-group label .check-btn{
+	position: relative;
+	margin: -3px 4px 0 0;
+}
+.m-login-wrap .t-control-group .forget-pwd{
+	color:#f60;
+}
+.m-login-wrap .btn-group{
+	margin:12px auto;
+	text-align:right;
+}
+
+.m-login-wrap .btn-group .login-btn{
+	display:block;
+	width:300px;
+	height:36px;
+	background-color:#f60;
+	color:#fff;
+	font:normal 18px/36px "微软雅黑";
+	border:none;
+	text-align:center;
+}
+.m-login-wrap .btn-group .login-btn:hover{
+	background-color:#f90;
+}
+.m-login-wrap .btn-group .register{
+	display:inline-block;
+	margin-top:10px;
+	font-size:12px;
+	color:#69c;
+	text-decoration:none;
+}
+.m-login-wrap .column-wrap{
+	margin:20px auto ;
+	padding:20px 0;
+	border-top:1px solid #ddd;
+	font-size:12px;
+	color:#333;
+	width:300px;
+	overflow:hidden;
+}
+.m-login-wrap .column-wrap a{
+	margin-right: 10px;
+    color: #3b83cb;
+}
+/*.m-login-wrap .column-wrap .qq-login{
+	background:url(../Images/icon-qq-36x36.png) no-repeat;
+}
+.m-login-wrap .column-wrap .sina-login{
+	background:url(../Images/icon-sian-36x36.png) no-repeat;
+}*/
+.m-login-wrap .validationError{
+    margin-top:6px;
+	padding-left:20px;
+	color:#f60;
+	background:url(../Images/msgIcon.jpg) no-repeat left center;
+}
+
+
+
+.m-login-wrap .pwd-group label{
+	display:inline-block;
+	width:180px;
+}
+.m-login-wrap .pwd-group .text-watermark,
+.m-login-wrap .pwd-group label .ipt-text{
+	width:160px;
+}
+.m-login-wrap .pwd-group .verify-btn{
+	display:inline-block;
+	line-height:36px;
+	width:100px;
+	height:36px;
+	margin-left: 10px;
+	background-color: #ecf5fe;
+	border: 1px solid #dbeaf9;
+	font: normal 12px/28px "微软雅黑";
+	color: #2e7dcd;
+	vertical-align: -3px;
+}
+
+.m-login-wrap .pwd-group .verify-btn:hover{
+	background-color:#69c;
+	border-color:#69c;
+	color:#fff;
+	cursor:pointer;
+}
+.m-login-wrap .pwd-group .verify-btn-dis:hover,
+.m-login-wrap .pwd-group .verify-btn-dis{
+	background-color:#ddd;
+	border-color:#ddd;
+	color:#999;
+	cursor:default;
+}
+.m-login-wrap .login-tabs{
+	width: 300px;
+	margin: 20px auto 0;
+	text-align:left;
+}
+.m-login-wrap .login-tabs a{
+	display:inline-block;
+	margin:0 20px 0 0;
+	color:#333;
+}
+.m-login-wrap .login-tabs a .icon-radio{
+	display:inline-block;
+	width:13px;
+	height:13px;
+	margin-right:5px;
+	background:url(../Images/icon-radio-btn.png) no-repeat -17px 0;
+	overflow:hidden;
+	vertical-align:-3px;
+}
+.m-login-wrap .login-tabs .isActive .icon-radio{
+	background-position:0 0;
+}
+.m-login-wrap .login-tabs .isActive{
+	cursor:default;
+	text-decoration:none;
+}
+
+
+/* ie7 以下 版本提前信息 */
+.ie-tips{
+	margin:0 0 10px;
+	padding:6px 10px ;
+	background-color: #fcf8e3;
+	color:#000;
+	text-align:center;
+	border:1px solid #f5dcbc;
+}
+.ie-tips a{
+	color:#000;
+}
+.ie-tips .link-btn{
+	padding:0 2px;
+	font-weight:bold;
+	color:#2e7dcd;
+}
+.ie-tips span{
+	color:#f30;
+	font-weight:bold;
+}

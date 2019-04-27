@@ -2,7 +2,861 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ebb932-3c76-4dd8-9e6c-4d0313f55274" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/CommentBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/ForumBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/ForumlableBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/Ueditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/controller/ForumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/service/ForumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/OSSClientUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/UeditorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/ueditorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/anchor/anchor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/attachment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/attachment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/attachment/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/background/background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/background/background.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/background/background.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/background/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/background/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/chart.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/charts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/emotion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/emotion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/emotion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/gmap/gmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/help/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/help/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/help/help.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/image.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/image/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/internal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/link/link.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/map/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/map/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/music/music.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/music/music.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/music/music.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/preview/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/spechars/spechars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/spechars/spechars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/table/dragicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/table/edittable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/table/edittable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/table/edittable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/table/edittd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/table/edittip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/images/pre0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/images/pre1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/images/pre2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/images/pre3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/images/pre4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/template/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/video/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/webapp/webapp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/controller.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/lib/json.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/lib/ueditor-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/addimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/deletedisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/deleteenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/listbackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/zh-cn/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/css/ueditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/dialogbase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/anchor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/arrow_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/arrow_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/button-bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/charts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/cursor_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/cursor_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/filescan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/highlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/icons-all.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/loaderror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/lock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/sortable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/sparator_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/videologo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/word.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/default/images/wordpaste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/themes/iframe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/video-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/video-js.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/video.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/video-js/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/xss.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.parse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/201712182029094306.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/20171227125327330.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/201712271417377335_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/201801021051485993_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/80931.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/banner-fH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/conversion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/dateinput-single.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/dc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/freeHouse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/h.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/jq.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/layer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/loginBox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/mba_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/mv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/overlay.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/process-fH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/s.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/saved_resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/scrollUp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/statkeyword.ashx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/statkeyword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/tjSemCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/ui-calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/fulishe_files/vds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201802111101317068_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/2018031416422292_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/20180330184633108_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201804201916411042_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201804261350193743_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201804261350317519_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201804261350446239_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/20180511171933890_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201806211418476226_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201807121412465106_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201808141107397736_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201810101049493142_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/201810101517154152_1190_301.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/80931.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/bbs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/beautyList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/conversion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/dc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/h.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/mba_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/mv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/s.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/saved_resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/statkeyword.ashx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/statkeyword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/tjSemCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/gushi_files/vds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/132" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/201605231551387789.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/201804261350193743_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/201804261350317519_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/201804261350446239_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/201805291530336738.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/201903012109094686.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/201903101332104167.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/80931.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/bbs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/beautyList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/conversion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/dc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/h.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/mba_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/mv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/s.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/saved_resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/statkeyword.ashx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/statkeyword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/tjSemCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/luntan_files/vds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/132" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/132(1)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201509150535469662.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201607111656313489_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201612091112445759.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201612091117253864_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20170621105133705_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201708171304035167_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201708182017134745.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201708301538569651_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201710192057349258_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201712131518284608.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201804091534406180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201804201916411042_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201804261350193743_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201804261350317519_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201804261350446239_300_180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805021134245060.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805021134531496_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805051807546902.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180511171933890_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805161058047413_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805211554122287.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805211555119684_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805231413416353_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805231424271823.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805281050218384_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/2018052914272517.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805291429376981_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805291530336738.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805301138473243_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805311438511686.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805311439244089_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201805312210454708.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201806011434545304_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201806061120492948_369_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201806191120006235_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201806211418476226_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201806251130087603_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201806271051281749_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807051423537769.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807051452141172.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807051659519657.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807051700311161_369_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807051750538923.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807051751332038_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180706104812340.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807061157393049_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807061201288222_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807061231323474.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807091548383111_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807091622465325_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807101531128246.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807101700313568.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807121126514247_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807121819071261_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807131452286388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807161111333651_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807161624034443.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807171350526993_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807181215269211_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807191857089796.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807201204007651_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807231109353873_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807241253465744_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807241301494360.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807251040259505_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807261223118783_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807261907145365.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807271851042243_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807301100573348_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807301749049038_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807311739367659.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201807311915383147_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808011655469134_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808021401457186.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808031751213208_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180807103624428_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808071602432418_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808071656311470.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808081441347308_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808081448367880_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808081511541818_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808091936156244.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808131443311069_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808131455002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180813145520384_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808141107397736_270_270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808141807405446.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808151904267758_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808151938168217_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808151939325021_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808151939502373_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808151940128321_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808151941084515_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808151941286162_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808161509231591.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808161728025322_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808161741203351_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808171553359218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180817173611289_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180817180149121.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808201347128770_369_232.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808221026537383_369_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180822144125481_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808231639002144.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808231702191494.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/2018082317073812_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808241027465616_369_232.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808271418319326_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808281030052796_369_232.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808281613305714_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808282150567472_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808301950041590.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808311249109948_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201808311612118979_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809041711476723.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180904171621622_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809111500375995_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809111547179750.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/20180912101355338.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809121537367896_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809121546161418.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809130946118725.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809131112587021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809131633254933.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809131644127949.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809131916058782.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809132100067608.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809141324019940_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809141328336894_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809141929458037_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809141929593788.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809141959434800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809142351539593_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809171024178150_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809171426596051_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809171428094552_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809171428444937_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809171429528134_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809171439485242_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809181911086055.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809181922339983_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809191332344912_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809261908084980_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201809271604162423.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810071902355399.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810071953401041_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810081545082538.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810101738368148_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810171738295698_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810221114016342.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810221114514916_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810221221364800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810221236346447_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810241437238678_1190_450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810251049079371_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201810301156042482_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201811061957404050_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201811121111111927_1190_450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201811121623398479_369_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201811121648335153.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201811151122029056_1190_450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201811291440417542_1190_450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201812101031382299_1190_450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201812121402017637.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201902211512487131.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201903012109094686.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201903101332104167.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201903131429162698_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201903131432589767_369_232.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201903131433014406_369_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201903131444411236_369_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/201904160025081276.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/80931.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/beautyList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/conversion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/dc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/g" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/h.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/jq.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/mba_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/mv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/s.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/saved_resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/statkeyword.ashx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/statkeyword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/tjSemCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/travel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/house/shouye_files/vds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootStrap-addTabs/bootstrap.addtabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootStrap-addTabs/bootstrap.addtabs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootbox/bootbox.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootbox/bootbox.locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootbox/bootbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/css/fileinput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/css/fileinput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/img/loading-sm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/js/fileinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/js/fileinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/js/locales/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/js/locales/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/themes/explorer/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/themes/explorer/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/themes/fa/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-fileinput/themes/gly/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/bootstrap-table-locale-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/bootstrap-table-locale-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/bootstrap-table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/bootstrap-table.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/angular/bootstrap-table-angular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/angular/bootstrap-table-angular.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/cookie/bootstrap-table-cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/cookie/bootstrap-table-cookie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/editable/bootstrap-table-editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/export/bootstrap-table-export.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/export/bootstrap-table-export.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/filter/bootstrap-table-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/filter/bootstrap-table-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/group-by/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/group-by/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/group-by/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/key-events/bootstrap-table-key-events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/key-events/bootstrap-table-key-events.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/print/bootstrap-table-print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/print/bootstrap-table-print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/resizable/bootstrap-table-resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-af-ZA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-af-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ar-SA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ar-SA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ca-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-cs-CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-da-DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-de-DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-el-GR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-el-GR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-en-US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-en-US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-MX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-MX.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-NI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-NI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-SP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-SP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-et-EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-et-EE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fa-IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-BE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-he-IL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hr-HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hu-HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-id-ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-it-IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ja-JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ka-GE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ka-GE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ko-KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ms-MY.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ms-MY.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nb-NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nl-NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pl-PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ro-RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ru-RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sk-SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sv-SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-th-TH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-tr-TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uk-UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ur-PK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ur-PK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-vi-VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-treeview/bootstrap-treeview.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap-treeview/bootstrap-treeview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/bootstrap3/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/font/summernote.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/font/summernote.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/font/summernote.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-ar-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-bg-BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-el-GR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-es-EU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-fi-FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-gl-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-lt-LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-lt-LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-mn-MN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-sl-SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-sr-RS-Latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-sr-RS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-ta-IN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-uz-UZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/lang/summernote-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/plugin/databasic/summernote-ext-databasic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/plugin/databasic/summernote-ext-databasic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/plugin/hello/summernote-ext-hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/plugin/specialchars/summernote-ext-specialchars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote-bs4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote-bs4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote-bs4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote-lite.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote-lite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote-lite.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/dist/summernote.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/addcomment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/addforum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/forum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/test1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/gushi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/gushixiangqing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/luntan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/shouye.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/controller/ForumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/dao/ForumDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/ForumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/impl/ForumServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-provider-zdg/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-provider-zdg/src/main/resources/mapper/ForumMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -12,6 +866,10 @@
     <ignored path="$PROJECT_DIR$/apartment-provider/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/apartment-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/apartment-provider-zdg/target/" />
+    <ignored path="$PROJECT_DIR$/apartment-feign-zdg/target/" />
+    <ignored path="$PROJECT_DIR$/springcloud-provider-zdg/target/" />
+    <ignored path="$PROJECT_DIR$/springcloud-feign-zdg/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +880,58 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>photoBean</find>
+      <find>Photo</find>
+      <find>commenttime</find>
+      <find>photoDao</find>
+      <find>论坛人</find>
+      <find>标签</find>
+      <find>简介内容</find>
+      <find>commentid</find>
+      <find>openUpdate</find>
+      <find>inituserTable</find>
+      <find>userForm</find>
+      <find>forumid</find>
+      <find>openAdd</find>
+      <find>headImg</find>
+      <find>img</find>
+      <find>forumimg</find>
+      <find>html</find>
+      <find>head</find>
+      <find>body</find>
+      <find>prettify</find>
+      <find>hotkeys</find>
+      <find>editor</find>
+      <find>searchUser</find>
+      <find>bootstrapTable</find>
+      <find>forumlabel</find>
+      <find>../../static</find>
+      <find>provinceAndcityname</find>
+      <find>selectForum</find>
+      <find>http</find>
+      <find>https</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ForumBean</replace>
+      <replace>forumBean</replace>
+      <replace>Forum</replace>
+      <replace>forumDao</replace>
+      <replace>userForm1</replace>
+      <replace>forumlabelid</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,26 +941,65 @@
       </map>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/config.json" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/impl/ForumServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/controller/ForumController.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/apartment-eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/apartment-eureka/src/main/java/com/jk/ApartmentEurekaApplication.java" />
-        <option value="$PROJECT_DIR$/apartment-feign/pom.xml" />
-        <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/ApartmentFeignApplication.java" />
-        <option value="$PROJECT_DIR$/apartment-feign/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/apartment-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/apartment-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/ApartmentProviderApplication.java" />
-        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/testController.java" />
-        <option value="$PROJECT_DIR$/apartment-provider/src/main/resources/mybatis/NewsMapper.xml" />
-        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/service/TestServiceImpl.java" />
-        <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/service/TestService.java" />
-        <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/apartment-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/dao/PhotoDao.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/impl/PhotoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/service/PhotoService.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/CommentBean.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/comment.html" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/utils/OSSClientUtil.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/as" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/test2.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/test1.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/basic.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/clear-formatting.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/events.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/form-post.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/formatblock-example.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/html-editor.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/multiple-editors.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/simple-toolbar.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/bootstarp-wysiwyg/bootstrap-wysiwyg.js" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/addcomment.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/test.html" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/resources/mapper/PhotoMapper.xml" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/forum.html" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/ForumlableBean.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/addforum.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/ueditorUtil.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/Ueditor.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/UeditorConfig.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/fulishe.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/shouye.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/config/CorsMapping.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/addforum.html" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/controller/ForumController.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/ForumService.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/impl/ForumServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/dao/ForumDao.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/service/ForumService.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/forum.html" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/ForumBean.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/src/main/resources/mapper/ForumMapper.xml" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/controller/ForumController.java" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/fulishe.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/shouye.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/luntan.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/gushixiangqing.html" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/gushi.html" />
       </list>
     </option>
   </component>
@@ -72,38 +1012,46 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springcloud-feign-zdg" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springcloud-feign-zdg" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="MavenRunner">
     <option name="jreName" value="12" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="28" />
+    <option name="y" value="437" />
     <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="height" value="251" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="true" />
+      <hideEmptyPackages ProjectPane="false" />
       <compactDirectories Scope="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -111,7 +1059,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555405676622" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556201330328" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -121,8 +1069,21 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\resources\templates\qt" />
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\resources\templates\ht" />
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jk.zdg.pojo" />
+      <recent name="com.jk.zdg.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\springcloud-apartment\apartment-provider\src\main\resources\mybatis" />
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\resources\templates\qt" />
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\java\com\jk\zdg" />
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\resources\templates" />
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\resources\static" />
+      <recent name="D:\idea\xiangmu\springcloud-apartment\springcloud-feign-zdg\src\main\resources\static\bootstarp-wysiwyg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -137,7 +1098,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApartmentFeignApplication">
+  <component name="RunManager" selected="Spring Boot.SpringcloudFeignZdgApplication">
     <configuration name="ApartmentEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="apartment-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.ApartmentEurekaApplication" />
@@ -152,9 +1113,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApartmentFeignZdgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apartment-feign-zdg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.zdg.ApartmentFeignZdgApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApartmentProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="apartment-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.ApartmentProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApartmentProviderZdgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apartment-provider-zdg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.zdg.ApartmentProviderZdgApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudFeignZdgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-feign-zdg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.zdg.SpringcloudFeignZdgApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudProviderZdgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-provider-zdg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.zdg.SpringcloudProviderZdgApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,7 +1161,28 @@
       <updated>1555385342081</updated>
       <workItem from="1555385343539" duration="2793000" />
       <workItem from="1555395022041" duration="1387000" />
-      <workItem from="1555402400626" duration="2487000" />
+      <workItem from="1555402400626" duration="6346000" />
+      <workItem from="1555412804844" duration="629000" />
+      <workItem from="1555415291864" duration="12615000" />
+      <workItem from="1555462510955" duration="8819000" />
+      <workItem from="1555472787845" duration="3703000" />
+      <workItem from="1555482316252" duration="26080000" />
+      <workItem from="1555543751172" duration="17822000" />
+      <workItem from="1555575833299" duration="660000" />
+      <workItem from="1555576612368" duration="3409000" />
+      <workItem from="1555583356373" duration="11684000" />
+      <workItem from="1555634309234" duration="5717000" />
+      <workItem from="1555644390023" duration="12173000" />
+      <workItem from="1555673034879" duration="2131000" />
+      <workItem from="1555894082394" duration="6511000" />
+      <workItem from="1555912642282" duration="5863000" />
+      <workItem from="1555924852440" duration="15185000" />
+      <workItem from="1555977750432" duration="26095000" />
+      <workItem from="1556065421497" duration="3449000" />
+      <workItem from="1556092272758" duration="8902000" />
+      <workItem from="1556152519021" duration="9572000" />
+      <workItem from="1556256907672" duration="74000" />
+      <workItem from="1556372105079" duration="254000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1555387084352</created>
@@ -181,16 +1191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1555387084352</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="赵殿刚 的分支">
+      <created>1555405799738</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555405799738</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6667000" />
+    <option name="totallyTimeSpent" value="191873000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25642964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28895614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -200,18 +1217,18 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="JRebel" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45628998" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3409836" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.13442624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295082" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.36393443" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32942432" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.36393443" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32786885" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="15" />
@@ -222,7 +1239,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.1323752" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -237,153 +1254,457 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="赵殿刚 的分支" />
+    <option name="LAST_COMMIT_MESSAGE" value="赵殿刚 的分支" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/multiple-editors.html" />
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/simple-toolbar.html" />
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/bootstarp-wysiwyg/bootstrap-wysiwyg.js" />
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/examples/form-post.html" />
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="2201">
+          <caret line="198" column="5" lean-forward="true" selection-start-line="103" selection-start-column="4" selection-end-line="198" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/addimage.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/background.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/button.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/lang/en/images/copy.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.parse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/controller.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/jsp/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-982">
+          <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/ueditorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-274">
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <folding>
+            <element signature="e#5425#5426#0" expanded="true" />
+            <element signature="e#5466#5467#0" expanded="true" />
+            <element signature="e#5499#5500#0" expanded="true" />
+            <element signature="e#5544#5545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/OSSClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1547">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/Ueditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/utils/UeditorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#4963#4964#0" expanded="true" />
+            <element signature="e#4996#4997#0" expanded="true" />
+            <element signature="e#5025#5026#0" expanded="true" />
+            <element signature="e#5062#5063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/static/baidu_ueditor/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/fulishe.html" />
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/shouye.html" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apartment-eureka/src/main/java/com/jk/ApartmentEurekaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/ApartmentFeignApplication.java">
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/test2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-feign/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/service.java" />
-    <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller.java" />
-    <entry file="file://$PROJECT_DIR$/apartment-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="-228">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/service/TestService.java">
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/config/CorsMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="19">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/resources/mybatis/NewsMapper.xml">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/ForumlableBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        <state relative-caret-position="285">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/ApartmentProviderApplication.java">
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/comment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="-3181">
+          <caret line="44" selection-start-line="44" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-eureka/pom.xml">
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="95">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/SpringcloudProviderZdgApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="95">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/service/TestServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="171">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/SpringcloudFeignZdgApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/ForumService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/Test.java">
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/service/impl/ForumServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java">
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/dao/ForumDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="513">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/service/ForumService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/java/com/jk/zdg/controller/ForumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1331">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/fulishe.html" />
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/java/com/jk/zdg/controller/ForumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-zdg/src/main/resources/mapper/ForumMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-840">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/addcomment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/addforum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1747">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1805">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/ht/forum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="286" column="45" lean-forward="true" selection-start-line="286" selection-start-column="45" selection-end-line="286" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/ForumBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="e#1952#1953#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2125#2126#0" expanded="true" />
+            <element signature="e#2180#2181#0" expanded="true" />
+            <element signature="e#2226#2227#0" expanded="true" />
+            <element signature="e#2266#2267#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#2526#2527#0" expanded="true" />
+            <element signature="e#2568#2569#0" expanded="true" />
+            <element signature="e#2610#2611#0" expanded="true" />
+            <element signature="e#2647#2648#0" expanded="true" />
+            <element signature="e#2708#2709#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2796#2797#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
+            <element signature="e#2878#2879#0" expanded="true" />
+            <element signature="e#2920#2921#0" expanded="true" />
+            <element signature="e#2956#2957#0" expanded="true" />
+            <element signature="e#2988#2989#0" expanded="true" />
+            <element signature="e#3038#3039#0" expanded="true" />
+            <element signature="e#3080#3081#0" expanded="true" />
+            <element signature="e#3120#3121#0" expanded="true" />
+            <element signature="e#3155#3156#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#3328#3329#0" expanded="true" />
+            <element signature="e#3378#3379#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+            <element signature="e#3450#3451#0" expanded="true" />
+            <element signature="e#3476#3477#0" expanded="true" />
+            <element signature="e#3514#3515#0" expanded="true" />
+            <element signature="e#3544#3545#0" expanded="true" />
+            <element signature="e#3581#3582#0" expanded="true" />
+            <element signature="e#3613#3614#0" expanded="true" />
+            <element signature="e#3664#3665#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3744#3745#0" expanded="true" />
+            <element signature="e#3778#3779#0" expanded="true" />
+            <element signature="e#3832#3833#0" expanded="true" />
+            <element signature="e#3878#3879#0" expanded="true" />
+            <element signature="e#3916#3917#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4004#4005#0" expanded="true" />
+            <element signature="e#4050#4051#0" expanded="true" />
+            <element signature="e#4087#4088#0" expanded="true" />
+            <element signature="e#4120#4121#0" expanded="true" />
+            <element signature="e#4172#4173#0" expanded="true" />
+            <element signature="e#4216#4217#0" expanded="true" />
+            <element signature="e#4248#4249#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+            <element signature="e#4318#4319#0" expanded="true" />
+            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#4398#4399#0" expanded="true" />
+            <element signature="e#4440#4441#0" expanded="true" />
+            <element signature="e#4510#4511#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4603#4604#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4670#4671#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4741#4742#0" expanded="true" />
+            <element signature="e#4776#4777#0" expanded="true" />
+            <element signature="e#4832#4833#0" expanded="true" />
+            <element signature="e#4880#4881#0" expanded="true" />
+            <element signature="e#4915#4916#0" expanded="true" />
+            <element signature="e#4946#4947#0" expanded="true" />
+            <element signature="e#4994#4995#0" expanded="true" />
+            <element signature="e#5034#5035#0" expanded="true" />
+            <element signature="e#5068#5069#0" expanded="true" />
+            <element signature="e#5097#5098#0" expanded="true" />
+            <element signature="e#5142#5143#0" expanded="true" />
+            <element signature="e#5178#5179#0" expanded="true" />
+            <element signature="e#5209#5210#0" expanded="true" />
+            <element signature="e#5235#5236#0" expanded="true" />
+            <element signature="e#5274#5275#0" expanded="true" />
+            <element signature="e#5304#5305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/gushi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/shouye.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8854">
+          <caret line="466" selection-start-line="466" selection-end-line="467" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/luntan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7733">
+          <caret line="407" column="70" selection-start-line="407" selection-start-column="70" selection-end-line="407" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/zdg/pojo/CommentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-feign-zdg/src/main/resources/templates/qt/gushixiangqing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="786" column="35" selection-start-line="786" selection-start-column="35" selection-end-line="786" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

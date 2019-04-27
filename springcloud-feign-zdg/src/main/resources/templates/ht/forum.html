@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入jequery -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- 引入bootstrap的css、js文件 -->
+    <script type="text/javascript" src="/js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.css">
+    <!-- 引入table的css、js -->
+    <script type="text/javascript" src="/js/bootstrap-table/bootstrap-table.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-table/bootstrap-table.css">
+    <script type="text/javascript" src="/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <!-- 引入bootbox的js -->
+    <script type="text/javascript" src="/js/bootbox/bootbox.all.min.js"></script>
+
+
+
+</head>
+<body>
+<div id="toolbar">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="name">房东姓名</label>
+            <input type="text" class="form-control" id="name" placeholder="请输入房东姓名">
+        </div>
+        <div class="form-group">
+            <label for="provinceAndcityname">根据省市查:</label>
+            <input type="text" class="form-control" id="provinceAndcityname" placeholder="请输入热门地区">
+        </div>
+       <!-- <div class="form-group">
+            <label for="price">价格</label>
+            <input type="text" class="form-control" id="startPrice" placeholder="开始价格">
+            <input type="text" class="form-control" id="endPrice" placeholder="结束价格">
+        </div>
+        <div class="form-group">
+            <label for="bookTime">时间</label>
+            <input type="text" class="form-control date" id="starttime" placeholder="开始时间">
+            <input type="text" class="form-control date" id="endtime" placeholder="结束时间">
+        </div>-->
+        <button type="button" class="btn btn-info glyphicon glyphicon-search" onclick="searchUser()">搜索</button>
+    </form>
+    <button type="button" class="btn btn-info" onclick="openAdd()">新增</button>
+    <button type="button" class="btn btn-danger" onclick="delmany()">批删</button>
+</div>
+
+<!-- 定义表格 -->
+<div id="userTable"></div>
+</body>
+<script>
+    $(function(){
+        inituserTable();
+
+    })
+
+
+    //条件查询
+    function searchUser(){
+        $('#userTable').bootstrapTable('refresh');
+
+    }
+    //修改
+    function openUpdate(forumid){
+        //打开修改弹框
+        openUpdateDialog();
+
+        //查询回显数据
+        $.ajax({
+            url:'/queryForumid',
+            type:'post',
+            async:false,//同步
+            data:{forumid:forumid},
+            dataType:'json',
+            success:function(data) {
+
+                $('#forumid').val(data.forumid);
+                $('#forumupdate').val(data.forumupdate);
+                $('#forumbrowse').val(data.forumbrowse);
+                $('#forumcollect').val(data.forumcollect);
+                $('#forumlike').val(data.forumlike);
+                $('#forumcommentid').val(data.forumcommentid);
+                $('#foruminfo').val(data.foruminfo);
+                $('#forumuser').val(data.forumuser);
+                $('#forumlabel').val(data.forumlabel);
+                $('#forumname').val(data.forumname);
+                $('#url').val(data.url);
+
+            }
+        })
+    }
+    //打开修改弹框
+    function openUpdateDialog(){
+        bootbox.dialog({
+            title:'修改用户',
+            message: createAddContent("/page/toAdd"),
+            closeButton: true,//是否显示关闭按钮
+            buttons : {
+                "success" : {
+                    "label" : "<i class='icon-ok'></i> 保存",
+                    "className" : "btn-sm btn-success",
+                    "callback" : function() {
+                        $.ajax({
+                            url:'/addForum',
+                            type:'post',
+                            dataType:'json',
+                            data:$("#userForm").serialize(),
+                            success:function(data){
+                                if(data){
+                                    inituserTable();
+                                }else{
+                                    bootbox.alert({
+                                        size:"amall",
+                                        title:"提示",
+                                        massage:'修改失败',
+                                    })
+                                }
+
+                            }
+                        });
+                    }
+                },
+                "cancel" : {
+                    "label" : "<i class='icon-info'></i> 取消",
+                    "className" : "btn-sm btn-danger",
+                    "callback" : function() {
+
+                    }
+                }
+            }
+
+        });
+    }
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+    //新增
+    function openAdd(){
+        bootbox.dialog({
+            title:'添加用户',
+            message: createAddContent("/page/toAdd"),
+            closeButton: true,//是否显示关闭按钮
+            buttons : {
+                "success" : {
+                    "label" : "<i class='icon-ok'></i> 保存",
+                    "className" : "btn-sm btn-success",
+                    "callback" : function() {
+                        $.ajax({
+                            url:'/addForum',
+                            type:'post',
+                            dataType:'json',
+                            data:$("#userForm").serialize(),
+                            success:function(data){
+                                if(data){
+                                    inituserTable();
+                                }else{
+                                    bootbox.alert({
+                                        size:"amall",
+                                        title:"提示",
+                                        massage:'新增失败',
+                                    })
+                                }
+
+                            }
+                        });
+                    }
+                },
+                "cancel" : {
+                    "label" : "<i class='icon-info'></i> 取消",
+                    "className" : "btn-sm btn-danger",
+                    "callback" : function() {
+
+                    }
+                }
+            }
+
+        });
+
+    }
+
+
+
+    //初始化表格数据
+    function inituserTable() {
+        $("#userTable").bootstrapTable({
+            url:'/selectForum',
+            //toolbar:'#toolbar',
+            pagination:true,//是否展示分页
+            pageList:[2,5,10,20],//分页组件
+            pageNuber:1,
+            pageSize:1,//默认每页条数
+            /*queryParams:function(){
+                return {
+                    page:this.pageNumber,
+                    rows:this.pageSize,
+
+                }
+            },*/
+            queryParams:function(){
+
+
+                return{
+                    page: this.pageNumber,
+                    rows: this.pageSize,
+                    provinceAndcityname:$('#provinceAndcityname').val(),
+                    name:$('#name').val()
+
+                }
+            },
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+            columns: [
+                {checkbox:true},
+
+
+                {field:'forumid',title:'论坛主键',align:'center',width:100},
+                 {field:'forumupdate',title:'上传时间',align:'center',width:100},
+                {field:'forumbrowse',title:'浏览量',align:'center',width:100},
+                {field:'forumcollect',title:'收藏量',align:'center',width:100},
+                {field:'forumlike',title:'点赞量',align:'center',width:100},
+                {field:'commentinfo',title:'评论内容',align:'center',width:100},
+                {field:'commenttime',title:'评论时间',align:'center',width:100},
+                {field:'foruminfo',title:'简介内容',align:'center',width:100},
+                {field:'forumuser',title:'作者',align:'center',width:100},
+                {field:'forumlabel',title:'标签',align:'center',width:100},
+                {field:'forumname',title:'论坛名',align:'center',width:100},
+                {field:'name',title:'房东姓名',align:'center',width:100},
+                {field:'provincename',title:'省',align:'center',width:100},
+                {field:'cityname',title:'市',align:'center',width:100},
+                {field:'url',title:'路径',align:'center',width:100},
+                {field:'cityid',title:'市id',align:'center',width:100},
+                {field:'pid',title:'父级为市id',align:'center',width:100},
+                {field:'forumimg',title:'封面',align:'center',width:250,formatter:function(value,row,index){
+                        return '<img width="50px" height="50px" src='+value+'>';
+                    }},
+               /*
+                {field:'sex',title:'性别',align:'center',width:100,formatter:function(value,row,index){
+                        return value==1?'男':value==2?'女':value==3?'其他':'';
+                    }},
+                {field:'image',title:'封面',align:'center',width:100},*/
+
+                {field:'123',title:'操作',formatter:function(value,row,index){
+                        return '<a href="javascript:delone('+row.forumid+')">删除</a>'+
+                            '| <a href="javascript:openUpdate('+row.forumid+')">修改</a>'
+                         /*   + '| <a href="javascript:openPing('+row.id+')">评论</a>'*/
+                    }}
+
+
+            ]
+        })
+    }
+
+    //批删
+    function delmany(){
+        var ids = '';
+        var books = $("#bookTable").bootstrapTable("getSelections");
+        for (var i = 0; i < books.length; i++) {
+            ids += ids == '' ? books[i].bookId : ","+books[i].bookId
+        }
+        delBook(ids);
+    }
+    //单删
+    function delone(forumid){
+        delBook(forumid)
+    }
+    //删除提出公共代码
+    function delBook(ids){
+        bootbox.confirm({
+            size:"small",
+            message:"你确定要删除吗？",
+            callback:function(result){
+                if(result){
+                    $.ajax({
+                        url:'/deleteForum',
+                        type:'post',
+                        data:{ids:ids},
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                searchUser();
+                            }else{
+                                bootbox.alert({
+                                    size:"amall",
+                                    title:"提示",
+                                    massage:'删除失败',
+                                })
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+</script>
+</html>

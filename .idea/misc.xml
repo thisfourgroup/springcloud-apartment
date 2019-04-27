@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/apartment-feign/pom.xml" />
         <option value="$PROJECT_DIR$/apartment-provider/pom.xml" />
         <option value="$PROJECT_DIR$/apartment-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-provider-zdg/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-feign-zdg/pom.xml" />
       </list>
     </option>
   </component>
