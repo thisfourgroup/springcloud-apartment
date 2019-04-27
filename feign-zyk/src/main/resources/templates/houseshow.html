@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="/javascript/jsFiles.js"></script>
+<script>
+    $(function () {
+        initTable();
+    })
+
+    function searchHouses() {
+        $('#table').bootstrapTable('refresh')
+    }
+
+    function initTable() {
+        $('#table').bootstrapTable({
+            url: '/house/queryHosueAll',         //请求后台的URL（*）
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            sortable: false,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber: 1,                       //初始化加载第一页，默认第一页
+            pageSize: 5,                       //每页的记录行数（*）
+            pageList: [1,3,5,10,25,50,100],        //可供选择的每页的行数（*）
+            showRefresh: true,                  //是否显示刷新按钮
+            queryParams : function() {
+                return {
+                    page : this.pageNumber,
+                    rows : this.pageSize,
+                };
+            },
+            columns: [{
+                    checkbox: true
+                },
+                {
+                    field: 'id',
+                    title: '房屋编号',
+                    width: 100
+                }, {
+                    field: 'landlordName',
+                    title: '房东姓名',
+                    width: 100
+                }, {
+                    field: 'name',
+                    title: '房屋标题',
+                    width: 300
+                }, {
+                    field: 'price',
+                    title: '房屋价钱',
+                    width: 100
+                },{
+                    field: 'discount',
+                    title: '促销价钱',
+                    width: 100
+                },{
+                    field: 'zz',
+                    title: '所在地区',
+                    width: 150,
+                    formatter:function(index,row){
+                        var str =row.provinceName+"--"+row.cityName;
+                        return str;
+                    },
+                },{
+                    field: 'operate',
+                    title: '操作',
+                    formatter:function(index,row){
+                        var str ='<a href="javascript:deleteHouseById('+row.id+')">删除</a>'
+                        str += ' |  <a href="javascript:openNotice('+row.id+')">查看设施</a>';
+                        str += ' |  <a href="javascript:openRules('+row.id+')">查看守则</a>';
+                        str += ' |  <a href="javascript:openImage('+row.id+')">查看图片</a>';
+                        return str;
+                    },
+                },
+            ],
+            rowStyle: function (row, index) {
+                var classesArr = ['success', 'info'];
+                var strclass = "";
+                if (index % 2 === 0) {//偶数行
+                    strclass = classesArr[0];
+                } else {//奇数行
+                    strclass = classesArr[1];
+                }
+                return { classes: strclass };
+            },//隔行变色
+        });
+    }
+var i = 0;
+    function openNotice(houseId) {
+        sessionStorage.houseId = houseId;
+        i = 1;
+        openAdd("GoToQueryNotice")
+    }
+
+    function openImage(houseId) {
+        sessionStorage.houseId = houseId;
+        i = 0;
+        openAdd("GoToQueryImage")
+    }
+
+    function getChecked() {
+        var checked = $('[name="checkName"]')
+        var value = "";
+        $.each(checked,function (index, check) {
+            if (check.checked==true){
+                value += value =="" ? check.value : ","+check.value;
+            }
+        })
+        return value
+    }
+    function saveRules() {
+        var houseId = sessionStorage.houseId;
+        var value = getChecked()
+        $.ajax({
+            url:'house/saveRules',
+            data:{rulesIds:value,houseId:houseId},
+            success:function(result){
+                console.log(result);
+            },
+            error:function(){
+
+            }
+        })
+    }
+
+    function saveFacility() {
+        var houseId = sessionStorage.houseId;
+        var value = getChecked();
+        $.ajax({
+            url:'house/saveFacility',
+            data:{facIds:value,houseId:houseId},
+            success:function(result){
+                console.log(result);
+            },
+            error:function(){
+
+            }
+        })
+    }
+
+    function openRules(houseId) {
+        sessionStorage.houseId = houseId;
+        i = 2;
+        openAdd("GoToQueryRules")
+    }
+
+    function queryStoryById(id) {
+        $.ajax({
+            url:'/story/queryStoryById',
+            data:{storyId:id},
+            async:false,
+            success:function(result){
+                openAdd();
+                $('#storyId').val(result.id);
+                $('#name').val(result.name);
+                $('#jieshao').val(result.jieshao);
+                $('#typeId').val(result.typeId);
+                initFile(result.img)
+            },
+            error:function(){
+
+            }
+        })
+
+    }
+
+    function delHouses() {
+        var ids = "";
+        var idArr = $('#table').bootstrapTable('getSelections');
+        $.each(idArr,function(index,row){
+            ids += ids == "" ? row.id : ","+row.id;
+        })
+        deleteHouseById(ids);
+    }
+    function deleteHouseById(ids) {
+        $.ajax({
+            url:'/house/deleteHouseById',
+            data : {
+                ids : ids
+            },
+            success : function(result) {
+                if (result) {
+                    searchHouses();
+                } else {
+                    bootbox.alert({
+                        size : "small",
+                        title : "提示",
+                        message : "删除失败...",
+                    })
+                }
+            }
+        })
+    }
+
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+
+    function openAdd(url) {
+        bootbox.dialog({
+            title: '房屋管理',
+            closeButton: true,
+            className: "my-modal",
+            message:createAddContent(url),
+            animate: true,
+            buttons: {
+                ok: {
+                    label: "保存",
+                    className: 'btn-info',
+                    callback: function(){
+                       if (i==2){
+                           saveRules();
+                       }else if (i==1){
+                           saveFacility();
+                    }else {
+                           searchHouses();
+                       }
+                    }
+                },
+                cancel: {
+                    label: "取消",
+                    className: 'btn-danger',
+                    callback: function(){
+                    }
+                }
+            }
+        });
+    }
+
+
+
+</script>
+<style>
+    .modal-content{
+        text-align: center;
+        margin-left: -100px;
+        width: 800px;
+    }
+
+
+</style>
+<body>
+<nav class="navbar navbar-inverse .navbar-fixed-top">
+    <ul class="nav navbar-nav">
+    <li class="nav navbar-nav"><a href="#" style="font-size: 30px;margin-left: 800px;">房屋信息管理系统 </a></li>
+    </ul>
+</nav>
+    <div class="container-fluid">
+        <div class="row">
+                <button type="button" onclick="delHouses()" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-minus" aria-hidden="true">批量删除</span>
+                </button>
+                <table id="table"></table>
+        </div>
+    </div>
+</body>
+</html>

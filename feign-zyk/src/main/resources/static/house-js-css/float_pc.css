@@ -1,0 +1,137 @@
+.m-floating-layer {
+    display: none;
+    position: fixed;
+    z-index: 99998;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+.m-floating-layer .tj-floating-pop-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.m-floating-layer .tj-floating-pop-wrap-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #051223;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    z-index: -200;
+}
+.m-floating-layer .tj-floating-pop-box {
+    position: relative;
+    width: 980px;
+    height: 150px;
+    margin: 0 auto;
+    background: inherit;
+    border: 0;
+}
+.m-floating-layer .tj-floating-pop-box .tj-floating-pop-pic {
+    width: 610px;
+    height: 180px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.m-floating-layer .tj-floating-pop-box .tj-floating-pop-pic img {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* code style */
+
+.m-floating-layer .tj-floating-side-bar {
+    position: absolute;
+    top: 0;
+    left: 610px;
+    width: 380px;
+    height: 150px;
+}
+.m-floating-layer .tj-floating-side-bar .tj-floating-side-bar-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1e3348;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    z-index: -100;
+}
+.m-floating-layer .tj-floating-side-bar .code-pic {
+    float: left;
+    width: 115px;
+    margin-left: 22px;
+}
+.m-floating-layer .tj-floating-side-bar .code-pic img {
+    display: block;
+    width: 115px;
+    height: 116px;
+    margin-top: 20px;
+}
+.m-floating-layer .tj-floating-side-bar .hint-box {
+    line-height: 2;
+    margin-left: 156px;
+    padding-top: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.m-floating-layer .tj-floating-side-bar .hint-box span {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+/* close btn style ====================================================================================================*/
+
+.m-floating-layer .close-btn {
+    position: absolute;
+    top: 10px;
+    right: -4px;
+    font-size: 38px;
+    line-height: 1.2;
+    font-family: Simsun;
+    color: #9aa1a8;
+    outline: 0 none -webkit-transition: .5s;
+    transition: .5s
+}
+.m-floating-layer .close-btn:hover {
+    text-decoration: none;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg)
+}
+
+/* floating-layer hide style ====================================================================================================*/
+
+.open-floatingLayer {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    bottom: 50px;
+    width: 125px;
+    height: 125px;
+}
+.open-floatingLayer .floatingLayer-cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+@media screen and (max-width: 1161px) {
+    .open-floatingLayer .floatingLayer-cont {
+        background-position: -76px 0 !important;
+    }
+}
