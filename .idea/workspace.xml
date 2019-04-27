@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="13ebb932-3c76-4dd8-9e6c-4d0313f55274" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/target/classes/Test.class" afterDir="false" />
@@ -11,6 +12,10 @@
       <change beforePath="$PROJECT_DIR$/apartment-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apartment-eureka/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-apartment.iml" beforeDir="false" />
+=======
+    <list default="true" id="13ebb932-3c76-4dd8-9e6c-4d0313f55274" name="Default Changelist" comment="init project test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,7 +33,29 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/ApartmentProviderApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,8 +68,31 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/service/TestService.java">
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -55,13 +105,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,9 +133,13 @@
         <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/service/TestServiceImpl.java" />
         <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/service/TestService.java" />
         <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/apartment-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+=======
+        <option value="$PROJECT_DIR$/common/src/main/java/Test.java" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
       </list>
     </option>
   </component>
@@ -140,9 +197,53 @@
               <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
               <item name="apartment" type="462c0819:PsiDirectoryNode" />
               <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -161,6 +262,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
               <item name="apartment" type="462c0819:PsiDirectoryNode" />
               <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
@@ -198,6 +300,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jk" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
             </path>
           </expand>
           <select />
@@ -219,7 +328,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+=======
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -271,8 +387,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555385342081</updated>
+<<<<<<< HEAD
       <workItem from="1555385343539" duration="2793000" />
       <workItem from="1555395022041" duration="1387000" />
+=======
+      <workItem from="1555385343539" duration="5125000" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1555387084352</created>
@@ -281,10 +401,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555387084352</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init project test">
+      <created>1555393212918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555393212918</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test 实体 测试">
+      <created>1555393667502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555393667502</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4180000" />
   </component>
   <component name="ToolWindowManager">
@@ -308,6 +443,33 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45628998" />
+=======
+    <option name="totallyTimeSpent" value="5125000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45662847" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -338,7 +500,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="init project test" />
+    <MESSAGE value="test 实体 测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 实体 测试" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/common/pom.xml">
@@ -478,18 +642,100 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
+<<<<<<< HEAD
+=======
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java">
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>common</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/locales/zh.js"></script>
+    <script type="text/javascript" src="/locales/zh-TW.js"></script>
+    <script type="text/javascript" src="/fileinput.js"></script>
+    <script type="text/javascript" src="/fileinput.min.js"></script>
+    <!-- 引入jequery -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- 引入bootstrap的css、js文件 -->
+    <script type="text/javascript" src="/js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.css">
+    <!-- 引入table的css、js -->
+    <script type="text/javascript" src="/js/bootstrap-table/bootstrap-table.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-table/bootstrap-table.css">
+    <script type="text/javascript" src="/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <!-- 引入date日期的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!-- 引入bootbox的js -->
+    <script type="text/javascript" src="/js/bootbox/bootbox.all.min.js"></script>
+    <!-- 引入文件上传的css、js -->
+    <script src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">
+</head>
+<body>
+<input type="hidden" id="headImg" name="goodsImg"/>
+<input type="file" class="projectfile" multiple accept="image/*" name="img" id="goodsImg">
+
+    <!--查询主体-->
+    <table id="table"></table>
+</body>
+
+<script type="text/javascript" th:inline="none">
+
+    function initTable() {
+        $('#table').bootstrapTable({
+            url: '/story/queryStorys',         //请求后台的URL（*）
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            sortable: false,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber: 1,                       //初始化加载第一页，默认第一页
+            pageSize: 5,                       //每页的记录行数（*）
+            pageList: [1,3,5,10,25,50,100],        //可供选择的每页的行数（*）
+            showRefresh: true,                  //是否显示刷新按钮
+            queryParams : function() {
+                return {
+                    page : this.pageNumber,
+                    rows : this.pageSize,
+                };
+            },
+            columns: [{
+                checkbox: true
+            },
+                {
+                    field: 'id',
+                    title: '标题ID'
+                }, {
+                    field: 'titlename',
+                    title: '标题名称'
+                }{
+                    field: 'operate',
+                    title: '操作',
+                    formatter:function(index,row){
+                        var str ='<a href="javascript:deleteStoryById('+row.id+')">删除</a>'
+                        str += ' |  <a href="javascript:queryStoryById('+row.id+')">修改</a>';
+                        return str;
+                    },
+                },
+            ],
+            rowStyle: function (row, index) {
+                var classesArr = ['success', 'info'];
+                var strclass = "";
+                if (index % 2 === 0) {//偶数行
+                    strclass = classesArr[0];
+                } else {//奇数行
+                    strclass = classesArr[1];
+                }
+                return { classes: strclass };
+            },//隔行变色
+        });
+    }
+
+    $('#goodsImg').fileinput({
+        language: 'zh', //设置语言
+        uploadUrl: '/upload', //上传的地址
+        allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+        showUpload: true, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-primary", //按钮样式
+        dropZoneEnabled: false,//是否显示拖拽区域
+        //minImageWidth: 50, //图片的最小宽度
+        //minImageHeight: 50,//图片的最小高度
+        //maxImageWidth: 1000,//图片的最大宽度
+        //maxImageHeight: 1000,//图片的最大高度
+        //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+        //minFileCount: 0,
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+
+    }).on('fileuploaded', function(event, data, previewId, index) {
+
+
+        var imgval = $('#headImg').val();
+        if(imgval == null || imgval == "" || imgval == undefined){
+            imgval = data.response.responseText;
+        }/*else{
+			imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+		}*/
+        $('#headImg').val(imgval);
+    });
+</script>
+</html>

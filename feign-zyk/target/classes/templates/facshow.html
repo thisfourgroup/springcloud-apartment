@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+
+    $(function () {
+        initData();
+    })
+
+    function initData(){
+        var houseId = sessionStorage.houseId;
+        $.ajax({
+            url:'/house/queryFacilitys',
+            data:{houseId:houseId},
+            success:function(result){
+                console.log(result)
+                 $.each(result,function (index,fac) {
+                     var html = "<div><div style='font-size: 25px;text-align: center'>" + fac.facName + "</div>";
+                     $.each(fac.children, function (i, row) {
+                         html += '<input type="checkbox" name="checkName" ';
+                         if (row.checked) {
+                             html += "checked = true"
+                         }
+                         html += ' value = "' + row.facId + '">' + row.facName + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                         if ((i + 1) % 4 == 0 && i != 0) {
+                             html += "</br>";
+                         }
+                     })
+                     html += "</div>";
+                     $('#rulesDiv').append(html);
+                 })
+            },
+            error:function(){
+
+            }
+        })
+    }
+
+</script>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-8">
+            <nav class="navbar .navbar-fixed-top">
+                <ul class="nav navbar-nav">
+                    <li class="nav navbar-nav"><a href="#" style="font-size: 30px;margin-left: 295px;">房屋设施 </a></li>
+                </ul>
+            </nav>
+            <label style="font-size: 25px;display: none">房屋设施</label>
+            <div id="rulesDiv" style="font-size: 20px;font-style: revert"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

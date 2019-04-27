@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="/javascript/jsFiles.js"></script>
+<script>
+    $(function () {
+        initTable();
+    })
+
+    function searchStorys() {
+        $('#table').bootstrapTable('refresh')
+    }
+
+    function initTable() {
+        $('#table').bootstrapTable({
+            url: '/story/queryStorys',         //请求后台的URL（*）
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            sortable: false,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber: 1,                       //初始化加载第一页，默认第一页
+            pageSize: 5,                       //每页的记录行数（*）
+            pageList: [1,3,5,10,25,50,100],        //可供选择的每页的行数（*）
+            showRefresh: true,                  //是否显示刷新按钮
+            queryParams : function() {
+                return {
+                    page : this.pageNumber,
+                    rows : this.pageSize,
+                };
+            },
+            columns: [{
+                    checkbox: true
+                },
+                {
+                    field: 'id',
+                    title: '故事ID'
+                }, {
+                    field: 'name',
+                    title: '故事名称'
+                }, {
+                    field: 'img',
+                    title: '故事图片'
+                }, {
+                    field: 'jieshao',
+                    title: '故事介绍'
+                },{
+                    field: 'typeName',
+                    title: '故事类型'
+                },{
+                    field: 'pingjiaInfo',
+                    title: '评价信息'
+                },{
+                    field: 'zan',
+                    title: '点赞数量'
+                },{
+                    field: 'operate',
+                    title: '操作',
+                    formatter:function(index,row){
+                        var str ='<a href="javascript:deleteStoryById('+row.id+')">删除</a>'
+                        str += ' |  <a href="javascript:queryStoryById('+row.id+')">修改</a>';
+                        return str;
+                    },
+                },
+            ],
+            rowStyle: function (row, index) {
+                var classesArr = ['success', 'info'];
+                var strclass = "";
+                if (index % 2 === 0) {//偶数行
+                    strclass = classesArr[0];
+                } else {//奇数行
+                    strclass = classesArr[1];
+                }
+                return { classes: strclass };
+            },//隔行变色
+        });
+    }
+    function queryStoryById(id) {
+        $.ajax({
+            url:'/story/queryStoryById',
+            data:{storyId:id},
+            async:false,
+            success:function(result){
+                openAdd();
+                $('#storyId').val(result.id);
+                $('#name').val(result.name);
+                $('#jieshao').val(result.jieshao);
+                $('#typeId').val(result.typeId);
+                initFile(result.img)
+            },
+            error:function(){
+
+            }
+        })
+
+    }
+
+    function delStorys() {
+        var ids = "";
+        var idArr = $('#table').bootstrapTable('getSelections');
+        $.each(idArr,function(index,row){
+            ids += ids == "" ? row.id : ","+row.id;
+        })
+        deleteStoryById(ids);
+    }
+    function deleteStoryById(ids) {
+        $.ajax({
+            url:'/story/deleteStorysById',
+            data : {
+                ids : ids
+            },
+            success : function(result) {
+                if (result) {
+                    searchStorys();
+                } else {
+                    bootbox.alert({
+                        size : "small",
+                        title : "提示",
+                        message : "删除失败...",
+                    })
+                }
+            }
+        })
+    }
+
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+
+    function openAdd() {
+        var url = '/GoTOAddHtml'
+        bootbox.dialog({
+            title: '添加商品',
+            closeButton: true,
+            message:createAddContent(url),
+            animate: true,
+            buttons: {
+                ok: {
+                    label: "保存",
+                    className: 'btn-info',
+                    callback: function(){
+                        $.ajax({
+                            url:'/story/saveOrUpdateStory',
+                            data: $('#StoryForm').serialize(),
+                            success:function(result){
+                                if (result) {
+                                    searchStorys();
+                                } else {
+                                    bootbox.alert({
+                                        size : "small",
+                                        title : "提示",
+                                        message : "新增失败...",
+                                    })
+                                }
+                            },
+                            error:function(){
+
+                            }
+                        })
+                    }
+                },
+                cancel: {
+                    label: "取消",
+                    className: 'btn-danger',
+                    callback: function(){
+                    }
+                }
+            }
+        });
+    }
+
+
+
+</script>
+<body>
+<nav class="navbar navbar-inverse .navbar-fixed-top">
+    <ul class="nav navbar-nav">
+    <li class="nav navbar-nav"><a href="#" style="font-size: 30px;margin-left: 800px;">故事管理系统 </a></li>
+    </ul>
+</nav>
+    <div class="container">
+        <div class="row">
+                <button type="button" onclick="delStorys()" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-minus" aria-hidden="true">批量删除</span>
+                </button>
+                <button type="button" style="margin-left:30px" onclick="openAdd()" class="btn btn-info">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true">添加故事</span>
+                </button>
+                <table id="table"></table>
+        </div>
+    </div>
+</body>
+</html>
