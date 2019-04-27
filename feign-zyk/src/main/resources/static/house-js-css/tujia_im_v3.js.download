@@ -5316,10 +5316,6 @@ function createQRcodeInFooter() {
                   'background-image': 'none',
                   'background-position': '0% 0%',
               });
-              QRCode.wechatQr = new QRCode(document.getElementsByClassName('u-icon-app-down')[0], {
-                  width: 98,
-                  height: 98
-              });
               QRCode.wechatQr.makeCode(QRURL);
               $('.u-icon-app-down').addClass('dynamic_QRcode');
               // 设置二维码div中img为block

@@ -1,4 +1,4 @@
-document.write('<script src="/javascript/jsFiles.js"></script>')
+
 $(function () {
     queryHouseInfo();
     querySheShiInfo();
@@ -51,7 +51,6 @@ function initTime() {
         console.log(maxTime);
     });
 }
-
 function queryHouseInfo() {
     $.ajax({
         url: '/house/queryHouseById',
@@ -59,10 +58,11 @@ function queryHouseInfo() {
         success: function (result) {
             var html = "<p>" + result.name + "</p>";
             var region = "<span>" + result.provinceName + "--" + result.cityName + "</span>";
+            sessionStorage.region = result.cityName;
             var desc = "<span>" + result.houseDescribe + "</span>"
             var price = "<span>" + result.price + "</span>"
             housePrice = result.price;
-            var maxPrice = "<span>" + result.discount + "</span>";
+            var maxPrice = "<span>" + result.price + "</span>";
             $('#houseTitle').html(html);
             $('#regionId').html(region);
             $('#houseDesc').html(desc);
@@ -77,13 +77,23 @@ function queryHouseInfo() {
 }
 
 function reserveMehted() {
+
     $.ajax({
         url: '/house/reserveMehted',
         success: function (result) {
             console.log(minTime)
             console.log(maxTime)
             console.log(housePrice)
+            sessionStorage.startTime = minTime;
+            sessionStorage.endTime = maxTime;
             if (result) {
+                if (minTime==""||maxTime==""){
+                    bootbox.alert({
+                        message: "<span style='font-size: 20px;text-align: center'>您好,请您先选择入住时间,再进行预订</span>",
+                        className: 'rubberBand animated'
+                    });
+                    return;
+                }
                 $.ajax({
                     url: '/house/queryTime',
                     data: {
@@ -92,16 +102,18 @@ function reserveMehted() {
                         housePrice: housePrice
                     },
                     success: function (result) {
-                        bootbox.alert({
-                            size: "large",
-                            title: "<span style='font-size: 25px'>消息",
-                            message: "<span style='font-size: 20px'>您好,您预定的房屋一共需要支付 <span style='color: red;font-size: 25px'>" + result + " </span>人民币,请准备好你的钱包,等我开发完您就可以进行支付了</span>",
-                            callback: function () { /* your callback code */
-                            }
-                        })
+                        sessionStorage.price = result;
+                        sessionStorage.dayCount = result/housePrice;
+                        location.href="/GoToOrder";
                     },
                     error: function () {
-
+                       /* bootbox.alert({
+                            size: "large",
+                            title: "<span style='font-size: 25px'>消息",
+                            message: "<span style='font-size: 20px'>您好,您预定的房屋一共需要支付 <span style='color: red;font-size: 25px'>" + result + " </span>人民币,由于人力资源有限 && 资金短缺,未完待续......</span>",
+                            callback: function () { /!* your callback code *!/
+                            }
+                        })*/
                     }
                 })
             } else {
@@ -118,6 +130,10 @@ function reserveMehted() {
 
         }
     })
+}
+
+function addHouses() {
+
 }
 
 function queryHouseImage() {

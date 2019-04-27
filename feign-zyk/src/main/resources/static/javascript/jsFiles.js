@@ -13,7 +13,7 @@ document.write('<script type="text/javascript" src="/js/bootstrap-table/bootstra
 document.write('<script type="text/javascript" src="/js/bootstrap-switch-master/js/bootstrap-switch.min.js"></script>')
 document.write('<script type="text/javascript" src="/js/bootstrap-fileinput/js/fileinput.min.js"></script>')
 document.write('<script type="text/javascript" src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>')
-document.write('<script type="text/javascript" src="/js/bootstrap-bootbox/bootbox.js"></script>')
+document.write('<script type="text/javascript" src="/js/bootbox/bootbox.all.min.js"></script>')
 document.write('<script type="text/javascript" src="/js/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>')
 document.write('<script type="text/javascript" src="/js/bootstrap-fileinput/js/locales/zh.js"></script>')
 

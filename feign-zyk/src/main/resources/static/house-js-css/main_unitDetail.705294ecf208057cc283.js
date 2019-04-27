@@ -1845,11 +1845,7 @@ webpackJsonp([3], {
         }, s = function () {
             var t = $("#tujia_page_navbar").attr("data-m-tujia-host") + document.location.pathname + document.location.search,
                 n = setInterval(function () {
-                    window.QRCode && $("#top-share-popup .wechat-share-qrcode").length && (new QRCode(document.getElementById("top-share-popup").getElementsByClassName("wechat-share-qrcode")[0], {
-                        "text": t,
-                        "width": 150,
-                        "height": 150
-                    }), clearInterval(n))
+
                 }, 2e3)
         }, r = function (t, n) {
             $.ajax({

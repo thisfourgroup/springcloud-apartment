@@ -4,6 +4,7 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -94,6 +95,21 @@ public class PageController {
             return "redirect:toLogin";
         }
         return "redirect:GoToHouse";
+    }
+
+    @RequestMapping("GoToOrder")
+    public String GoToOrder(){
+        return "order";
+    }
+
+    @RequestMapping("GoToAlipay")
+    public String GoToAlipay(){
+        return "alipay";
+    }
+
+    @RequestMapping("GoToAlipay1")
+    public String GoToAlipay1(){
+        return "alipay1";
     }
 
 }

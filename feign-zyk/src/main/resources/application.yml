@@ -17,7 +17,19 @@ spring:
     content-type: text/html
     cache: false
     mode: LEGACYHTML5
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 10000
+        read-timeout: 20000
+      service-test:
+        connect-timeout: 10000
+        read-timeout: 20000
+

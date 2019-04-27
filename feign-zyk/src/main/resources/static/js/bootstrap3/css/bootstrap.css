@@ -411,9 +411,6 @@ th {
 .glyphicon-volume-up:before {
   content: "\e038";
 }
-.glyphicon-qrcode:before {
-  content: "\e039";
-}
 .glyphicon-barcode:before {
   content: "\e040";
 }

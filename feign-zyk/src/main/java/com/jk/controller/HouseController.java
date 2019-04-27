@@ -3,11 +3,13 @@ package com.jk.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.jk.pojo.*;
 import com.jk.service.HouseService;
+import com.jk.utils.GetLatAndLngByBaidu;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -84,6 +86,11 @@ public class HouseController {
     @RequestMapping("queryTime")
     public long queryTime(String minTime,String maxTime,Integer housePrice){
         return hosueService.queryTime(minTime,maxTime,housePrice);
+    }
+
+    @RequestMapping("getLatAndLng")
+    public Object[] getLatAndLng(String addr) throws IOException {
+        return GetLatAndLngByBaidu.getCoordinate(addr);
     }
 
 }
