@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="apartment-provider" />
         <module name="common" />
-        <module name="provider" />
-        <module name="feign" />
-        <module name="apartment-feign" />
         <module name="apartment-eureka" />
+        <module name="apartment-feign" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="feign" target="1.8" />
+      <module name="provider" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
