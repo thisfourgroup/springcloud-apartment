@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="13ebb932-3c76-4dd8-9e6c-4d0313f55274" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/config/AlipayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/AlipayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/GetLatAndLngByBaidu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootbox/bootbox.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootbox/bootbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootbox/bootbox.locales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootbox/bootbox.locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootbox/bootbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/201804092101134521.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/201812251414329887_700_467.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/7moorInit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/80931.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/896beb70-d81a-11e7-b6e7-9da891414b0f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/QiMoIMSDK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/agentLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/app-code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/chatStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/close-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/continue-advisory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/hm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/invite-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/jquery-n.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/left_float_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/m7AllQuote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/manifest.82803666b7b154a4243a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/moor_chat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/moor_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/mv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/online" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/order_info.ab0ff4d8bf290883b80de57a2aa85546.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/order_info.c3a48399cea8d5e4cd43.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/push.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/right_float_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/saved_resource(1).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/saved_resource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/service" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/tjim_v1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/tjpfloating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/tujia-logo-2.2e28f2a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/uba.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/vds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/vendor.0e71961619ed4b43337e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/alipay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/alipay1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-zyk/src/test/java/com/jk/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/apartment-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apartment-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-apartment.iml" beforeDir="false" />
+=======
+    <list default="true" id="13ebb932-3c76-4dd8-9e6c-4d0313f55274" name="Default Changelist" comment="init project test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+=======
+      <change beforePath="$PROJECT_DIR$/feign-zyk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/HouseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/shiro/MyFormAuthziction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/shiro/MyRealm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/shiro/ShiroConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.705294ecf208057cc283.js" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.705294ecf208057cc283.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.a9bac0246264a843c4d6798d2a2ce457.css" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.a9bac0246264a843c4d6798d2a2ce457.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/online" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/online" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/tujia_im_v3.js.download" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/tujia_im_v3.js.download" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/vendor.be574991d5910311efde.js" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/vendor.be574991d5910311efde.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/javascript/jsFiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/javascript/jsFiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/Map.html" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/Map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/househtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/househtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-zyk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-zyk/pom.xml" afterDir="false" />
+>>>>>>> zhangyk
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/apartment-feign/target/" />
+    <ignored path="$PROJECT_DIR$/apartment-provider/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/apartment-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/provider-zyk/target/" />
+    <ignored path="$PROJECT_DIR$/feign-zyk/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/ApartmentProviderApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java">
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/config/AlipayConfig.java">
+>>>>>>> zhangyk
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/service/TestService.java">
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+=======
+>>>>>>> zhangyk
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+<<<<<<< HEAD
+=======
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+>>>>>>> zhangyk
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>base-alert</find>
+      <find>网络请求错误!</find>
+      <find>途家网订单页_files</find>
+      <find>order_files/vendor.0e71961619ed4b43337e.js</find>
+      <find>nice-select</find>
+      <find>m-order-loading</find>
+      <find>order-main</find>
+      <find>open-floatingLayer</find>
+      <find>current</find>
+      <find>check-date</find>
+      <find>select-</find>
+      <find>webErrorLog</find>
+      <find>QRCode</find>
+      <find>orderinfo-main</find>
+      <find>::after</find>
+      <find>check-date-cont clear</find>
+      <find>customer-num</find>
+      <find>passenger-tel</find>
+      <find>cert-number</find>
+      <find>passenger-name</find>
+      <find>getChatConfig</find>
+      <find>datePicker</find>
+      <find>script</find>
+      <find>link</find>
+      <find>order_files</find>
+      <find>float_pc</find>
+      <find>入住时段：</find>
+      <find>date-change-box</find>
+      <find>app_id</find>
+      <find>EnvUtils</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>order_files</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\Wokespace\Idea-work\1809a-Workspace\apartment\provider-zyk</dir>
+      <dir>E:\Wokespace\Idea-work\1809a-Workspace\apartment\feign-zyk</dir>
+      <dir>E:\Wokespace\Idea-work\1809a-Workspace\apartment\feign-zyk\src\main\resources</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/apartment-eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/apartment-eureka/src/main/java/com/jk/ApartmentEurekaApplication.java" />
+        <option value="$PROJECT_DIR$/apartment-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/ApartmentFeignApplication.java" />
+        <option value="$PROJECT_DIR$/apartment-feign/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/apartment-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/apartment-provider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/ApartmentProviderApplication.java" />
+        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/testController.java" />
+        <option value="$PROJECT_DIR$/apartment-provider/src/main/resources/mybatis/NewsMapper.xml" />
+        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/service/TestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/service/TestService.java" />
+        <option value="$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/apartment-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/apartment-provider/src/main/java/com/jk/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+=======
+        <option value="$PROJECT_DIR$/common/src/main/java/Test.java" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+=======
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/main_unitDetail.716dde36e9b5aa0ac9e8.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/manifest.128ecd15d51e0120b880.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/jquery-n.min.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/RegionController.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/imageshow.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/facshow.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/ruleshow.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/registry.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/jk/pojo/User.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/shiro/MyRealm.java" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/controller/HouseController.java" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/HouseService.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/service/HouseService.java" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/dao/HouseDao.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/shiro/MyFormAuthziction.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/shiro/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/houseshow.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/vendor.be574991d5910311efde.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/vendor.0e71961619ed4b43337e.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/order_info.ab0ff4d8bf290883b80de57a2aa85546.css" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/order_info.c3a48399cea8d5e4cd43.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css.map" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css.map" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.a9bac0246264a843c4d6798d2a2ce457.css" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.705294ecf208057cc283.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/tujia_im_v3.js.download" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/HouseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/config/AlipayConfig.java" />
+        <option value="$PROJECT_DIR$/provider-zyk/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/alipay1.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/alipay.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/online" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/househtml.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/order.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/javascript/jsFiles.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/test/java/com/jk/Test.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/order-js.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/config/AlipayConfig.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/AlipayController.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/HouseController.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/GetLatAndLngByBaidu.java" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js.js" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/templates/Map.html" />
+        <option value="$PROJECT_DIR$/feign-zyk/src/main/resources/application.yml" />
+>>>>>>> zhangyk
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Program Files/Java/apache-maven-3.6.0" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="12" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="207" />
+    <option name="y" value="14" />
+    <option name="width" value="890" />
+    <option name="height" value="554" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <compactDirectories Scope="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="apartment-provider" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="apartment-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+=======
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+>>>>>>> zhangyk
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-bootbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="feign-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springcloud-apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apartment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apartment" type="462c0819:PsiDirectoryNode" />
+              <item name="provider-zyk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/feign-zyk/src/main/resources/static/js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+=======
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+=======
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15625" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
+>>>>>>> zhangyk
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Wokespace\Idea-work\1809a-Workspace\apartment\feign-zyk\src\main\resources\templates" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jk" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Wokespace\Idea-work\1809a-Workspace\apartment\feign-zyk\src\main\resources\static\js" />
+      <recent name="E:\Wokespace\Idea-work\1809a-Workspace\apartment\feign-zyk\src\main\java\com\jk\config" />
+      <recent name="E:\Wokespace\Idea-work\1809a-Workspace\apartment\provider-zyk\src\main\java\com\jk\config" />
+      <recent name="E:\Wokespace\Idea-work\1809a-Workspace\apartment\feign-zyk\src\main\resources\templates" />
+      <recent name="E:\Wokespace\Idea-work\1809a-Workspace\apartment\feign-zyk\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jk.service" />
+      <recent name="com.jk.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jk.dao" />
+      <recent name="com.jk.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.GetLatAndLngByBaidu">
+    <configuration name="GetLatAndLngByBaidu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jk.utils.GetLatAndLngByBaidu" />
+      <module name="feign-zyk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jk.Test" />
+      <module name="feign-zyk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderZykApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="provider-zyk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jk" />
+      <option name="MAIN_CLASS_NAME" value="com.jk.ProviderZykApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApartmentEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apartment-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.ApartmentEurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApartmentFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apartment-feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.ApartmentFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApartmentProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apartment-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.ApartmentProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeignZykApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="feign-zyk" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.FeignZykApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderZykApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="provider-zyk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.ProviderZykApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.ProviderZykApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.ApartmentEurekaApplication" />
+      <item itemvalue="Spring Boot.FeignZykApplication" />
+      <item itemvalue="Spring Boot.ApartmentFeignApplication" />
+      <item itemvalue="Spring Boot.ApartmentProviderApplication" />
+      <item itemvalue="Spring Boot.ProviderZykApplication" />
+      <item itemvalue="Application.GetLatAndLngByBaidu" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GetLatAndLngByBaidu" />
+        <item itemvalue="Spring Boot.ProviderZykApplication" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.ProviderZykApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13ebb932-3c76-4dd8-9e6c-4d0313f55274" name="Default Changelist" comment="" />
+      <created>1555385342081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555385342081</updated>
+<<<<<<< HEAD
+      <workItem from="1555385343539" duration="2793000" />
+<<<<<<< HEAD
+      <workItem from="1555395022041" duration="1387000" />
+=======
+      <workItem from="1555385343539" duration="5125000" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+=======
+      <workItem from="1555395022041" duration="22088000" />
+      <workItem from="1555461729182" duration="25216000" />
+      <workItem from="1555547427063" duration="32274000" />
+      <workItem from="1555632896339" duration="12553000" />
+      <workItem from="1555655514547" duration="10102000" />
+      <workItem from="1555720444846" duration="2730000" />
+      <workItem from="1555834063995" duration="1258000" />
+      <workItem from="1555843715015" duration="1187000" />
+      <workItem from="1555847385761" duration="290000" />
+      <workItem from="1555850550229" duration="1855000" />
+      <workItem from="1555893774327" duration="63668000" />
+      <workItem from="1556066216426" duration="28634000" />
+      <workItem from="1556123671642" duration="163000" />
+      <workItem from="1556151629820" duration="163000" />
+      <workItem from="1556152509884" duration="267000" />
+      <workItem from="1556153066565" duration="17970000" />
+      <workItem from="1556245504348" duration="1790000" />
+      <workItem from="1556342980280" duration="9569000" />
+>>>>>>> zhangyk
+    </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1555387084352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555387084352</updated>
+    </task>
+<<<<<<< HEAD
+    <task id="LOCAL-00002" summary="init project test">
+      <created>1555393212918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555393212918</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test 实体 测试">
+      <created>1555393667502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555393667502</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+=======
+    <task id="LOCAL-00002" summary="test">
+      <created>1555397647913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555397647913</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+>>>>>>> zhangyk
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ProviderZykApplicationTests_contextLoads - 2019.04.18 at 21h 14m 52s.xml">
+      <configuration name="ProviderZykApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="4180000" />
+=======
+    <option name="totallyTimeSpent" value="234570000" />
+>>>>>>> zhangyk
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+<<<<<<< HEAD
+      <window_info id="JRebel" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25226668" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Run with VisualVM" />
+      <window_info anchor="bottom" id="JRebel Executor" />
+      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45628998" />
+=======
+    <option name="totallyTimeSpent" value="5125000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45662847" />
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32942432" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Mybatis datasource" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+=======
+      <window_info id="JRebel" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.27146667" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="JRebel Executor" order="2" />
+      <window_info anchor="bottom" id="JRebel Console" order="3" sideWeight="0.5002667" side_tool="true" weight="0.4392324" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="4" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="5" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49973333" weight="0.32942432" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49973333" weight="0.4392324" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49706668" weight="0.39658847" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4976" weight="0.33582088" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5002667" side_tool="true" weight="0.4392324" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.32942432" />
+      <window_info anchor="bottom" id="Java Enterprise" order="18" />
+      <window_info anchor="bottom" id="Database Changes" order="19" />
+      <window_info anchor="bottom" id="Version Control" order="20" />
+      <window_info anchor="right" id="Mybatis datasource" order="0" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.3296" />
+>>>>>>> zhangyk
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+<<<<<<< HEAD
+    <MESSAGE value="init project test" />
+    <MESSAGE value="test 实体 测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 实体 测试" />
+=======
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+>>>>>>> zhangyk
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/0.c2667909f1ea7192ac8c.js.下载" />
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/shiro/ShiroConfig.java" />
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/vendor.0e71961619ed4b43337e.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="3657" column="20" selection-start-line="3657" selection-start-column="20" selection-end-line="3657" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/vendor.be574991d5910311efde.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="3758" column="19" lean-forward="true" selection-start-line="3758" selection-start-column="19" selection-end-line="3758" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/order_info.ab0ff4d8bf290883b80de57a2aa85546.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="3519" column="1" selection-start-line="3519" selection-start-column="1" selection-end-line="3519" selection-end-column="1" />
+          <folding>
+            <element signature="e#55703#58568#1" expanded="true" />
+            <element signature="e#58806#61671#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/Float">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="197" selection-start-column="197" selection-end-column="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/Float" />
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/float_pc.css" />
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/tjpfloating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="472" column="13" selection-start-line="472" selection-start-column="13" selection-end-line="472" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="412" column="1" selection-start-line="412" selection-start-column="1" selection-end-line="412" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/order_info.c3a48399cea8d5e4cd43.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="2288" column="214" selection-start-line="2288" selection-start-column="214" selection-end-line="2288" selection-end-column="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order_files/tujia_im_v3.js" />
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/tujia_im_v3.js.download">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="5318" selection-start-line="5318" selection-end-line="5318" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.705294ecf208057cc283.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="1847" selection-start-line="1847" selection-end-line="1847" />
+          <folding>
+            <element signature="e#173#177#1" expanded="true" />
+            <element signature="e#46#50#1" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="4" column="5516" selection-start-line="4" selection-start-column="5516" selection-end-line="4" selection-end-column="5516" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/main_unitDetail.a9bac0246264a843c4d6798d2a2ce457.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="1" column="45153" lean-forward="true" selection-start-line="1" selection-start-column="45153" selection-end-line="1" selection-end-column="45153" />
+          <folding>
+            <element signature="e#47956#50821#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret column="221982" selection-start-column="221982" selection-end-column="221982" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="4" column="5516" selection-start-line="4" selection-start-column="5516" selection-end-line="4" selection-end-column="5516" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootstrap3/css/bootstrap.min.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="78" column="4411" selection-start-line="78" selection-start-column="4411" selection-end-line="78" selection-end-column="4411" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/houseshow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/dao/HouseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/config/AlipayConfig.java" />
+    <entry file="file://$PROJECT_DIR$/provider-zyk/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/alipay1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/config/CorsMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js-css/online">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/alipay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/pojo/House.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/pojo/Facility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apartment-eureka/src/main/java/com/jk/ApartmentEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-zyk/src/main/java/com/jk/service/impl/HouseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1299">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4565#4566#0" expanded="true" />
+            <element signature="e#4622#4623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/javascript/jsFiles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="88" lean-forward="true" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="585" column="5" lean-forward="true" selection-start-line="585" selection-start-column="5" selection-end-line="585" selection-end-column="5" />
+          <folding>
+            <element signature="e#23959#23960#0" expanded="true" />
+            <element signature="e#24016#24017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/househtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#2;n#div#2;n#div#1;n#div#0;n#div#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#2;n#div#1;n#div#0;n#div#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#2;n#div#1;n#div#0;n#div#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="99" column="30" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2794#2795#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/js/bootbox/bootbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="e#76#83#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/test/java/com/jk/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/test/java/com/jk/FeignZykApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/AlipayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/Map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/house-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/static/order-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="25" column="11" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="e#6#12#0" expanded="true" />
+            <element signature="e#12#18#0" expanded="true" />
+            <element signature="e#19#25#0" expanded="true" />
+            <element signature="e#25#31#0" expanded="true" />
+            <element signature="e#31#37#0" expanded="true" />
+            <element signature="e#42#48#0" expanded="true" />
+            <element signature="e#48#54#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/controller/HouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="91" column="44" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+<<<<<<< HEAD
+=======
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apartment-feign/src/main/java/com/jk/controller/TestController.java">
+>>>>>>> d8f23b23fead0061c6b55e581cd4064bb1fc3720
+=======
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/resources/templates/order.html">
+>>>>>>> zhangyk
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#aside#0;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#label#0;n#div#0;n#div#0;n#fieldset#0;n#div#1;n#div#1;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#label#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#label#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#label#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#label#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#5;n#div#0;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#5;n#div#0;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#2;n#div#1;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#label#0;n#div#0;n#div#2;n#div#1;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#4;n#div#1;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#4;n#div#1;n#div#2;n#div#5;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/utils/GetLatAndLngByBaidu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-zyk/src/main/java/com/jk/config/AlipayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+<<<<<<< HEAD
+          <last-edited>common</last-edited>
+=======
+          <last-edited>apartment-provider</last-edited>
+>>>>>>> zhangyk
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+<<<<<<< HEAD
+                <option value="0.6" />
+=======
+>>>>>>> zhangyk
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+<<<<<<< HEAD
+=======
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+>>>>>>> zhangyk
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

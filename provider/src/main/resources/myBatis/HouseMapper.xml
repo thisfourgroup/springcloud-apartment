@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.mapper.HouseMapper">
+<select id="findHouseCount" parameterType="map" resultType="int">
+    select count(1) from t_house h
+             LEFT JOIN t_title t on h.titleid=t.id
+              LEFT JOIN t_huxing hx on h.huxingid=hx.id
+             LEFT JOIN t_city tc on h.cityid=tc.cityid
+             <include refid="houseWhere"></include>
+</select>
+
+    <select id="findHouseList" parameterType="map" resultType="com.jk.pojo.HouseBean">
+    select h.name,h.price,tc.cityname as cityName,hx.name as huxingName,h.discount,t.name as titleName,h.image
+      from t_house h
+    LEFT JOIN t_title t on h.titleid=t.id
+    LEFT JOIN t_huxing hx on h.huxingid=hx.id
+    LEFT JOIN t_city tc on h.cityid=tc.cityid
+
+        <include refid="houseWhere"></include>
+    limit #{startIndex,jdbcType=NUMERIC},#{endIndex,jdbcType=NUMERIC}
+
+    </select>
+<sql id="houseWhere">
+ <where>
+
+     <if test="houseBean.titleid != null and houseBean.titleid !='' ">
+         and h.titleid = #{houseBean.titleid}
+     </if>
+
+     <if test="houseBean.cityid != null and houseBean.cityid !='' ">
+         and h.cityid = #{houseBean.cityid}
+     </if>
+
+ </where>
+
+</sql>
+
+ <select id="findCityCount" parameterType="map" resultType="int">
+
+ </select>
+
+    <select id="findCityList" parameterType="map" resultType="com.jk.pojo.CityBean">
+
+    </select>
+
+
+</mapper>
